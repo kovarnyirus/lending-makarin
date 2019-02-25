@@ -1,0 +1,106 @@
+.header__wrapper {
+  max-width: 320px;
+  padding-left: 21px;
+  padding-right: 21px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: 16px;
+  z-index: 10;
+  align-items: center;
+}
+
+.header__nav {
+  order: 1;
+}
+
+.header__logo {
+  order: 2;
+}
+
+.header__tel-ico {
+  order: 3;
+}
+
+
+.header-contacts__tel {
+  margin-top: 9px;
+  width: 15px;
+  height: 15px;
+}
+
+.header__logo-img {
+  width: 131px;
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1440px) {
+  .header__wrapper {
+    max-width: 1270px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 31px;
+  }
+
+  .header__tel-ico {
+    display: none;
+  }
+
+  .header__nav {
+    order: 2;
+    display: flex;
+  }
+
+  .header__logo {
+    order: 1;
+    margin-right: 85px;
+  }
+
+  .header__logo-img {
+    width: 270px;
+  }
+
+  .header-contacts {
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .header-contacts__tel {
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .header-contacts__tel--font {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+  }
+  .header-contacts__tel-icon{
+    margin-right: 10px;
+  }
+  .header-contacts__callback{
+    font-size: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-bottom: 1px dashed @color-blue;
+    text-align: right;
+    margin-top: 10px;
+  }
+}
+
+
+
+

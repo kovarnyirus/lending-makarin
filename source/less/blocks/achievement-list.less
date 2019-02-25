@@ -1,0 +1,38 @@
+.achievement-list__item {
+  padding-left: 30px;
+  margin-bottom: 23px;
+  font-size: 12px;
+  line-height: 1.2;
+  opacity: 0.6;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url("../img/about-cheked.svg");
+    background-size: cover;
+    width: 12px;
+    height: 12px;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about__achievement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .achievement-list__item {
+    width: 42%;
+    line-height: 22px;
+    font-size: 15px;
+    margin-bottom: 37px;
+    &:last-child{
+      width: 100%;
+    }
+  }
+}

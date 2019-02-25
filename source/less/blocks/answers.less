@@ -1,0 +1,52 @@
+.answers__wrapper{
+  max-width: 320px;
+  padding-left: 21px;
+  padding-right: 21px;
+  margin: auto;
+  padding-bottom: 55px;
+}
+
+.answers__title{
+  margin-bottom: 23px;
+}
+
+.answers__men-img{
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .answers__wrapper {
+    max-width: 960px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 293px;
+  }
+  .answers__title,
+  .answers__accordion{
+    max-width: 660px;
+  }
+
+  .answers{
+    background-image: url("../img/answers-bg.png");
+    position: relative;
+    margin-bottom: 77px;
+    &:before{
+      background: linear-gradient(183.01deg, #FFFFFF 5.72%, #D5D6DA 109.46%);
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      z-index: -1;
+    }
+  }
+  .answers__men-img{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 956px;
+  }
+}

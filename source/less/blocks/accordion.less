@@ -1,0 +1,49 @@
+.accordion-list__item {
+  padding-left: 31px;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.accordion__arrow-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.accordion__arrow {
+  fill: @color-blue;
+  fill-opacity: 1;
+}
+
+.accordion__arrow--down {
+  transform: rotate(90deg);
+}
+
+.accordion-list__item-tile {
+  font-size: 16px;
+  line-height: 1.2;
+  color: @color-black;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.accordion-list__item-message {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 1440px) {
+  .accordion-list__item-message {
+    line-height: 26px;
+    font-size: 15px;
+  }
+
+  .accordion-list__item-tile {
+    font-weight: bold;
+    line-height: 29px;
+    font-size: 20px;
+  }
+  .accordion-list__item-tile{
+    max-width: 513px;
+  }
+}

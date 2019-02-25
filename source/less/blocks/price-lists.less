@@ -1,0 +1,104 @@
+.price-lists__wrapper {
+  max-width: 320px;
+  margin: auto;
+  padding-bottom: 30px;
+  padding-left: 21px;
+  padding-right: 21px;
+}
+
+.price-lists__title {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.price-lists__item {
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 39px;
+  box-shadow: 0 20px 100px rgba(16, 94, 157, 0.15);
+  margin-bottom: 27px;
+  padding-bottom: 25px;
+}
+
+.price-lists__item-name {
+  border-radius: 5px;
+  font-size: 17px;
+  text-align: center;
+  font-family: "Montserrat", "Arial", sans-serif;
+  margin-bottom: 19px;
+}
+
+.price-lists__item-cost {
+  font-size: 35px;
+  text-align: center;
+  color: @color-blue;
+  margin-bottom: 10px;
+  line-height: 51px;
+}
+
+.price-lists__item-description {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 18px;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.6;
+  margin-bottom: 23px;
+}
+
+.price-lists__item-btn {
+  min-width: 162px;
+  width: 162px;
+  margin: auto;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.price-lists__item-description--amount {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 1440px) {
+  .price-lists__wrapper {
+    max-width: 960px;
+  }
+
+  .price-lists__items {
+    display: flex;
+  }
+
+  .price-lists__item {
+    width: 33.3%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .price-lists__item-description--font {
+    font-size: 15px;
+    line-height: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 24px;
+  }
+
+  .price-lists__item-description {
+    margin-bottom: 14px;
+  }
+
+  .price-lists__item-description--amount {
+    margin-bottom: 0;
+  }
+
+  .price-lists__item-name--margin {
+    margin-bottom: 6px;
+  }
+
+  .price-lists__title {
+    margin-bottom: 53px;
+  }
+
+  .price-lists__item-name {
+    line-height: 25px;
+  }
+}

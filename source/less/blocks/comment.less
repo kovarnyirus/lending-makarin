@@ -1,0 +1,135 @@
+.comment__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 320px;
+  margin: auto;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-bottom: 84px;
+}
+
+.comment__item {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 20px 100px rgba(16, 94, 157, 0.15);
+  padding-top: 29px;
+  padding-left: 30px;
+  padding-right: 25px;
+  padding-bottom: 45px;
+
+  &:not(:first-child) {
+    display: none;
+  }
+}
+
+.comment__item-user-avatar {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+.comment__item-title {
+  width: 132px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Montserrat", "Arial", sans-serif;
+  padding: 0;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.comment__item-text {
+  margin-top: 22px;
+  margin-bottom: 9px;
+  opacity: .6;
+}
+
+.comment__item-all-text {
+  font-size: 12px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  line-height: 1.3;
+}
+
+.comment__item-all-text-ico {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .comment__wrapper {
+    max-width: 100%;
+    margin-left: 241px;
+    margin-bottom: -240px;
+    z-index: 10;
+    position: relative;
+  }
+
+  .comment__item {
+    width: 600px;
+    margin-right: 40px;
+    padding-left: 223px;
+    padding-top: 62px;
+    padding-bottom: 46px;
+    padding-right: 40px;
+    position: relative;
+    background-color: @color-white;
+    &:not(:first-child) {
+      display: flex;
+    }
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 105px;
+      height: 53px;
+      right: 23px;
+      top: 0;
+      background-image: url("../img/quote.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .comment__title {
+    margin-bottom: 46px;
+  }
+
+  .comment__item-user-avatar {
+    position: absolute;
+    left: 35px;
+    width: 160px;
+    height: 160px;
+  }
+
+  .comment__item-title {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .comment__item-text {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 15px;
+    color: #000000;
+    opacity: 0.6
+  }
+
+  .comment__item-all-text {
+    line-height: 24px;
+    font-size: 15px;
+    border-bottom: 1px dashed @color-blue;
+  }
+
+  .comment__item-all-text-ico {
+    display: inline-block;
+    margin-left: 10px;
+    transform: rotate(90deg);
+  }
+  .comment__arrows{
+    margin-right: 241px;
+  }
+}
