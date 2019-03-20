@@ -2,11 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 320px;
-  margin: auto;
+  padding-top: 80px;
   padding-left: 21px;
   padding-right: 21px;
-  padding-bottom: 84px;
+  padding-bottom: 89px;
+}
+
+.comment__list{
+  margin-top: 25px;
 }
 
 .comment__item {
@@ -16,7 +19,7 @@
   padding-top: 29px;
   padding-left: 30px;
   padding-right: 25px;
-  padding-bottom: 45px;
+  padding-bottom: 42px;
 
   &:not(:first-child) {
     display: none;
@@ -34,7 +37,7 @@
   width: 132px;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.5;
   font-family: "Montserrat", "Arial", sans-serif;
   padding: 0;
   margin: 0;
@@ -44,13 +47,16 @@
 .comment__item-text {
   margin-top: 22px;
   margin-bottom: 9px;
+  line-height: 19px;
   opacity: .6;
+  font-size: 12px;
 }
 
 .comment__item-all-text {
   font-size: 12px;
   font-family: "Montserrat", "Arial", sans-serif;
-  line-height: 1.3;
+  line-height: 19px;
+  border-bottom: 1px dashed #4AB6E8;
 }
 
 .comment__item-all-text-ico {
