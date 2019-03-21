@@ -73,10 +73,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-main {
-  max-width: 320px;
-  margin: auto;
-}
 p {
   margin: 0;
   padding: 0;
@@ -686,6 +682,34 @@ ul {
 .about__scroll {
   display: none;
 }
+.about__social {
+  position: absolute;
+  right: 21px;
+  top: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about__social-link {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  margin-bottom: 7px;
+}
 @media (min-width: 1440px) {
   .about__wrapper {
     max-width: 960px;
@@ -1102,6 +1126,9 @@ ul {
   }
 }
 .assistant__wrapper {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 22px;
   padding-right: 22px;
   position: relative;
@@ -1153,6 +1180,9 @@ ul {
   padding-left: 21px;
   padding-right: 21px;
   padding-bottom: 88px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .comment__list {
   margin-top: 16px;
@@ -1377,6 +1407,9 @@ ul {
 }
 .program__wrapper {
   padding-bottom: 56px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .program__item {
   padding-left: 22px;
@@ -1435,6 +1468,9 @@ ul {
   padding-left: 22px;
   padding-right: 22px;
   padding-bottom: 37px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .patients-area__title {
   font-family: "Cambria", "Arial", sans-serif;
