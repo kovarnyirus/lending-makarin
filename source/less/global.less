@@ -177,6 +177,80 @@ ul {
   }
 }
 
+.video-btn {
+  width: 63px;
+  height: 63px;
+  position: absolute;
+  top: 62%;
+  left: 48%;
+  background-color: @color-white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  box-shadow: 0 16px 35px rgba(80, 189, 236, 0.75);
+  cursor: pointer;
+  transition: .2s;
+
+  &:before {
+    position: absolute;
+    display: block;
+    top: -15px;
+    left: -102px;
+    content: "Смотреть видео";
+    width: 65px;
+    height: 36px;
+    font-size: 12px;
+    line-height: 18px;
+    opacity: 0.43;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 22px;
+    left: -73px;
+    background-image: url("../img/about-line.svg");
+    width: 63px;
+    height: 25px;
+  }
+
+  &:hover {
+    padding: 15px;
+    box-sizing: initial;
+
+    &:before {
+      left: -85px;
+      top: 39px;
+    }
+
+    &:after {
+      left: -58px;
+      top: 90px;
+    }
+  }
+
+  &:active {
+    padding: 7px;
+    box-sizing: initial;
+
+    &:before {
+      left: -93px;
+      top: 31px;
+    }
+
+    &:after {
+      left: -65px;
+      top: 83px;
+    }
+  }
+}
+
+.icon-play {
+  width: 17px;
+  height: 15px;
+}
+
 
 @media (min-width: 1440px) {
   main {
@@ -208,5 +282,28 @@ ul {
     padding-bottom: 29px;
     font-size: 16px;
     font-weight: bold;
+  }
+
+  .video-btn {
+    width: 108px;
+    height: 108px;
+    top: 52%;
+    left: 50px;
+
+    &:before {
+      line-height: 18px;
+      font-size: 12px;
+      opacity: 0.6;
+      top: 25px;
+    }
+
+    &:after {
+      top: 75px;
+      height: 27px;
+    }
+  }
+  .icon-play {
+    width: 28px;
+    height: 25px;
   }
 }

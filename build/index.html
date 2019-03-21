@@ -88,8 +88,8 @@
           <source media="(min-width: 960px)" srcset="img/desktop-about-autor@1x.png 1x, img/desktop-about-autor@2x.png 2x">
           <img src="img/mobile-about-author@1x.png" srcset="img/mobile-about-author@2x.png 2x" alt="author" width="212" height="256" class="about__author-img">
         </picture>
-        <button class="about__video-btn">
-          <img src="img/icon-play.svg" alt="play" width="17" height="15" class="about__icon-play">
+        <button class="video-btn about__video-btn">
+          <img src="img/icon-play.svg" alt="play" width="17" height="15" class="icon-play">
         </button>
       </div>
       <button class="btn about__btn">Получить консультацию</button>
@@ -159,7 +159,7 @@
       </picture>
     </div>
     <div class="book__wrapper">
-      <h2 class="book__title">Автор книги <br> <span class="book__title title-text-blue">«Рак щитовидной железы»</span>
+      <h2 class="book__title">Автор книги <br> <span class="book__title--line-height title-text-blue">«Рак щитовидной железы»</span>
       </h2>
       <p class="book__description">Книга посвящена раку щитовидной железы — наиболее частому злокачественному процессу
         эндокринной системы.</p>
@@ -222,8 +222,8 @@
           <!--srcset="img/desktop-about-autor@1x.png 1x, img/desktop-about-autor@2x.png 2x">-->
           <img src="img/mobile-assistent@1x.png" srcset="img/mobile-assistent@2x.png 2x" alt="author" width="298" height="425" class="assistant__img">
         </picture>
-        <button class="about__video-btn">
-          <img src="img/icon-play.svg" alt="play" width="17" height="15" class="about__icon-play">
+        <button class="video-btn assistant__video-btn">
+          <img src="img/icon-play.svg" alt="play" width="17" height="15" class="icon-play assistant__icon-play ">
         </button>
       </div>
     </div>
@@ -359,51 +359,51 @@
   <section class="program">
     <div class="program__wrapper">
       <h2 class="program__block-title">Что включает в себя программа</h2>
-    </div>
-    <div class="program__list">
-      <div class="program__item">
-        <h3 class="program__number-program">
-          Программа №1
-        </h3>
-        <div class="program__item-description">
-          Впервые выявленный рак щитовидной железы
+      <div class="program__list">
+        <div class="program__item">
+          <h3 class="program__number-program">
+            Программа №1
+          </h3>
+          <div class="program__item-description">
+            Впервые выявленный рак щитовидной железы
+          </div>
+          <ul class="program__component-list">
+            <li class="program__component-item">Экспертное УЗИ щитовидной железы</li>
+            <li class="program__component-item">Экспертное УЗИ лимфатических узлов шеи</li>
+            <li class="program__component-item">Составление индивидуального плана предоперационного обследования</li>
+            <li class="program__component-item">Помощь в выборе оперирующего эндокринного хирурга и клиники</li>
+            <li class="program__component-item">Помощь в выборе клиники по лечению радиоактивным йодом</li>
+            <li class="program__component-item">Составление индивидуального плана химиотерапии</li>
+            <li class="program__component-item">Послеоперационное наблюдение пациента</li>
+            <li class="program__component-item">Индивидуальная карта наблюдения пациента</li>
+            <li class="program__component-item">Рекомендации по выбору лаборатории</li>
+            <li class="program__component-item">Консилиум из трех врачей через год после наблюдения</li>
+            <li class="program__component-item">Выделенная телефонная линия с врачом координатором</li>
+          </ul>
+          <batton class="program-toggle">+</batton>
         </div>
-        <ul class="program__component-list">
-          <li class="program__component-item">Экспертное УЗИ щитовидной железы</li>
-          <li class="program__component-item">Экспертное УЗИ лимфатических узлов шеи</li>
-          <li class="program__component-item">Составление индивидуального плана предоперационного обследования</li>
-          <li class="program__component-item">Помощь в выборе оперирующего эндокринного хирурга и клиники</li>
-          <li class="program__component-item">Помощь в выборе клиники по лечению радиоактивным йодом</li>
-          <li class="program__component-item">Составление индивидуального плана химиотерапии</li>
-          <li class="program__component-item">Послеоперационное наблюдение пациента</li>
-          <li class="program__component-item">Индивидуальная карта наблюдения пациента</li>
-          <li class="program__component-item">Рекомендации по выбору лаборатории</li>
-          <li class="program__component-item">Консилиум из трех врачей через год после наблюдения</li>
-          <li class="program__component-item">Выделенная телефонная линия с врачом координатором</li>
-        </ul>
-        <batton class="program-toggle">+</batton>
-      </div>
-      <div class="program__item">
-        <h3 class="program__number-program">
-          Программа №2
-        </h3>
-        <div class="program__item-description">
-          Операция по поводу рака щитовидной железы уже выполнена
+        <div class="program__item">
+          <h3 class="program__number-program">
+            Программа №2
+          </h3>
+          <div class="program__item-description">
+            Операция по поводу рака щитовидной железы уже выполнена
+          </div>
+          <ul class="program__component-list" style="display: none">
+            <li class="program__component-item">Экспертное УЗИ щитовидной железы</li>
+            <li class="program__component-item">Экспертное УЗИ лимфатических узлов шеи</li>
+            <li class="program__component-item">Составление индивидуального плана предоперационного обследования</li>
+            <li class="program__component-item">Помощь в выборе оперирующего эндокринного хирурга и клиники</li>
+            <li class="program__component-item">Помощь в выборе клиники по лечению радиоактивным йодом</li>
+            <li class="program__component-item">Составление индивидуального плана химиотерапии</li>
+            <li class="program__component-item">Послеоперационное наблюдение пациента</li>
+            <li class="program__component-item">Индивидуальная карта наблюдения пациента</li>
+            <li class="program__component-item">Рекомендации по выбору лаборатории</li>
+            <li class="program__component-item">Консилиум из трех врачей через год после наблюдения</li>
+            <li class="program__component-item">Выделенная телефонная линия с врачом координатором</li>
+          </ul>
+          <batton class="program-toggle">+</batton>
         </div>
-        <ul class="program__component-list" style="display: none">
-          <li class="program__component-item">Экспертное УЗИ щитовидной железы</li>
-          <li class="program__component-item">Экспертное УЗИ лимфатических узлов шеи</li>
-          <li class="program__component-item">Составление индивидуального плана предоперационного обследования</li>
-          <li class="program__component-item">Помощь в выборе оперирующего эндокринного хирурга и клиники</li>
-          <li class="program__component-item">Помощь в выборе клиники по лечению радиоактивным йодом</li>
-          <li class="program__component-item">Составление индивидуального плана химиотерапии</li>
-          <li class="program__component-item">Послеоперационное наблюдение пациента</li>
-          <li class="program__component-item">Индивидуальная карта наблюдения пациента</li>
-          <li class="program__component-item">Рекомендации по выбору лаборатории</li>
-          <li class="program__component-item">Консилиум из трех врачей через год после наблюдения</li>
-          <li class="program__component-item">Выделенная телефонная линия с врачом координатором</li>
-        </ul>
-        <batton class="program-toggle">+</batton>
       </div>
     </div>
   </section>
@@ -437,35 +437,34 @@
           </svg>
         </button>
       </div>
-      <div class="gallery certificate__gallery">
-        <div class="gallery-list">
-          <div class="gallery-list__item certificate__item">
-            <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
-            <div class="certificate__item-description">
-              Lorem ipsum dolor sit amet, consectetur
-            </div>
+      <div class="certificate__gallery">
+        <div class="certificate__item">
+          <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
+          <div class="certificate__item-description">
+            Lorem ipsum dolor sit amet, consectetur
           </div>
-          <div class="gallery-list__item certificate__item">
-            <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
-            <div class="certificate__item-description">
-              Lorem ipsum dolor sit amet, consectetur
-            </div>
+        </div>
+        <div class="certificate__item">
+          <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
+          <div class="certificate__item-description">
+            Lorem ipsum dolor sit amet, consectetur
           </div>
-          <div class="gallery-list__item certificate__item">
-            <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
-            <div class="certificate__item-description">
-              Lorem ipsum dolor sit amet, consectetur
-            </div>
+        </div>
+        <div class="certificate__item">
+          <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
+          <div class="certificate__item-description">
+            Lorem ipsum dolor sit amet, consectetur
           </div>
-          <div class="gallery-list__item certificate__item">
-            <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
-            <div class="certificate__item-description">
-              Lorem ipsum dolor sit amet, consectetur
-            </div>
+        </div>
+        <div class="certificate__item">
+          <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
+          <div class="certificate__item-description">
+            Lorem ipsum dolor sit amet, consectetur
           </div>
         </div>
       </div>
     </div>
+
   </section>
   <section class="documentation">
     <div class="documentation__wrapper">
@@ -545,7 +544,7 @@
         <div class="price-lists__item">
           <h3 class="price-lists__item-name">Консультация врача
             хирурга-эндокринолога, онколога</h3>
-          <div class="price-lists__item-cost">2 500 руб.</div>
+          <div class="price-lists__item-cost price-lists__item-cost--padding-bottom ">2 500 руб.</div>
           <div class="price-lists__item-description price-lists__item-description--font">Консультация врача проходит по
             средством телефонных переговоров или
             Skype звонка

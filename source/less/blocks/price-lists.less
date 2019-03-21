@@ -8,18 +8,19 @@
 
 .price-lists__title {
   text-align: center;
-  margin-bottom: 22px;
+  margin-bottom: 26px;
 
 }
 
 .price-lists__item {
   padding-left: 17px;
   padding-right: 17px;
-  padding-top: 39px;
+  padding-top: 35px;
   box-shadow: 0 20px 100px rgba(16, 94, 157, 0.15);
   margin-bottom: 28px;
-  padding-bottom: 25px;
+  padding-bottom: 31px;
   border-radius: 5px;
+  background-color: @color-white;
 }
 
 .price-lists__item-name {
@@ -34,8 +35,12 @@
   font-size: 35px;
   text-align: center;
   color: @color-blue;
-  margin-bottom: 20px;
   line-height: 51px;
+  margin-bottom: 5px;
+}
+
+.price-lists__item-cost--padding-bottom{
+  margin-bottom: 15px;
 }
 
 .price-lists__item-description {
@@ -46,7 +51,10 @@
   font-size: 12px;
   text-align: center;
   opacity: 0.6;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+  &:last-of-type{
+    margin-bottom: 36px;
+  }
 }
 
 .price-lists__item-btn {
@@ -58,9 +66,12 @@
 }
 
 .price-lists__item-description--amount {
-  margin-bottom: 5px;
-}
+   margin-bottom: 0;
+ }
 
+.price-lists__item-description--font {
+  margin-bottom: 36px;
+}
 @media (min-width: 1440px) {
   .price-lists__wrapper {
     max-width: 960px;
