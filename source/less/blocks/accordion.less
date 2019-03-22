@@ -1,18 +1,20 @@
 .accordion__item {
   padding-left: 33px;
   position: relative;
-  margin-bottom: 44px;
+  margin-bottom: 35px;
 }
 
 .accordion__arrow-wrapper {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 4px;
+  transition: all .3s linear;
 }
 
 .accordion__arrow {
   fill: @color-blue;
   fill-opacity: 1;
+  cursor: pointer;
 }
 
 .accordion__arrow--down {
@@ -25,15 +27,34 @@
   color: @color-black;
   margin-top: 0;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .accordion__item-message {
-  margin-top: 10px;
+  margin-top: 0;
   margin-bottom: 0;
   font-size: 12px;
   line-height: 20px;
-  opacity: .6;
+  opacity: 0;
   font-family: "Montserrat", "Arial", sans-serif;
+  visibility: hidden;
+  max-height: 0;
+  transition: all .3s linear;
+}
+
+.accordion__item.active {
+  margin-bottom: 46px;
+  & .accordion__item-message {
+    margin-top: 10px;
+    visibility: visible;
+    max-height: 100%;
+    opacity: 0.6;
+    padding-bottom: 0;
+  }
+
+  & .accordion__arrow-wrapper {
+    transform: rotate(90deg);
+  }
 }
 
 @media (min-width: 1440px) {
@@ -47,7 +68,8 @@
     line-height: 29px;
     font-size: 20px;
   }
-  .accordion__item-tile{
+
+  .accordion__item-tile {
     max-width: 513px;
   }
 }
