@@ -16,12 +16,23 @@
   padding-bottom: 8px;
   margin-bottom: 18px;
   border-bottom: 1px dashed @color-blue;
+  &:hover{
+    color: #76d4ff;
+    border-bottom: 1px dashed #76d4ff;
+  }
+  &:active{
+    color: #5da6c7;
+    border-bottom: 1px dashed #5da6c7;
+  }
 }
 
 .documentation-list__item-link{
   font-size: 12px;
   line-height: 18px;
   &:hover{
+    border-bottom: none;
+  }
+  &:active{
     border-bottom: none;
   }
 }

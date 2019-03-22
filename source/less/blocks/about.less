@@ -64,9 +64,6 @@
 }
 
 
-
-
-
 .about__achievement {
   padding-top: 29px;
 }
@@ -75,7 +72,7 @@
   display: none;
 }
 
-.about__social{
+.about__social {
   position: absolute;
   right: 21px;
   top: 160px;
@@ -83,7 +80,7 @@
   flex-direction: column;
 }
 
-.about__social-link{
+.about__social-link {
   width: 23px;
   height: 23px;
   border-radius: 50%;
@@ -92,13 +89,21 @@
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, .6);
   margin-bottom: 7px;
+  opacity: .6;
+  &:hover{
+    opacity: 1;
+  }
+  &:active{
+    background-color: #ECECEC;
+  }
 }
 
 @media (min-width: 768px) {
   .about__wrapper {
     max-width: 768px;
   }
-  .about-bg{
+
+  .about-bg {
     background-image: url("../img/about2-bg.svg");
     width: 657px;
     height: 657px;
