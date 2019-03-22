@@ -333,6 +333,7 @@ ul {
     padding-bottom: 29px;
     font-size: 16px;
     font-weight: bold;
+    max-width: 327px;
   }
   .video-btn {
     width: 108px;
@@ -344,10 +345,11 @@ ul {
     line-height: 18px;
     font-size: 12px;
     opacity: 0.6;
-    top: 25px;
+    top: 32px;
+    left: -105px;
   }
   .video-btn:after {
-    top: 75px;
+    top: 73px;
     height: 27px;
   }
   .icon-play {
@@ -415,10 +417,10 @@ ul {
 }
 @media (min-width: 1440px) {
   .header__wrapper {
-    max-width: 1270px;
+    max-width: 1294px;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 31px;
+    padding-top: 22px;
   }
   .header__tel-ico {
     display: none;
@@ -430,18 +432,20 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-right: 13px;
   }
   .header__logo {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
     margin-right: 85px;
+    margin-top: 13px;
   }
   .header__logo-img {
     width: 270px;
   }
   .header-contacts {
-    margin-left: 80px;
+    margin-left: 93px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -668,6 +672,7 @@ ul {
   text-align: center;
   margin-bottom: 15px;
   line-height: 35px;
+  font-family: "Montserrat", "Arial", sans-serif;
 }
 .about__title--font {
   font-family: "Cambria", "Arial", sans-serif;
@@ -736,7 +741,7 @@ ul {
     padding-right: 0;
     position: relative;
     padding-bottom: 69px;
-    padding-top: 80px;
+    padding-top: 97px;
   }
   .about-bg {
     background-image: url("../img/desktop-about-bg.svg");
@@ -746,13 +751,14 @@ ul {
     text-align: left;
     font-weight: 300;
     font-size: 60px;
+    line-height: 73px;
   }
   .about__description {
     line-height: 44px;
     font-size: 30px;
     max-width: 526px;
     text-align: left;
-    margin-top: 24px;
+    margin-top: 21px;
     margin-bottom: 46px;
   }
   .about__video-wrapper {
@@ -765,7 +771,10 @@ ul {
     padding-left: 0;
   }
   .about__btn {
-    margin-bottom: 60px;
+    margin-bottom: 36px;
+    min-width: 348px;
+    padding-top: 31px;
+    padding-bottom: 27px;
   }
   .about__achievement {
     width: 628px;
@@ -774,7 +783,7 @@ ul {
     display: block;
     position: absolute;
     right: 160px;
-    top: 105px;
+    top: 119px;
     width: 227px;
     height: 227px;
     border-radius: 50%;
@@ -798,14 +807,14 @@ ul {
     position: absolute;
     width: 160px;
     height: 151px;
-    top: -60px;
-    left: 10px;
+    top: -63px;
+    left: 28px;
   }
   .about__book-author {
     line-height: 19px;
     font-size: 13px;
     text-align: center;
-    padding-top: 90px;
+    padding-top: 92px;
     color: #000000;
     opacity: 0.6;
     margin-bottom: 9px;
@@ -822,8 +831,8 @@ ul {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    left: -96px;
-    bottom: 145px;
+    left: -364px;
+    bottom: 146px;
     z-index: 10;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -841,7 +850,7 @@ ul {
     width: 120px;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-    padding-left: 20px;
+    padding-left: 18px;
     opacity: 0.6;
   }
   .about__scroll-range {
@@ -851,6 +860,7 @@ ul {
     border: 1px solid #000000;
     position: relative;
     opacity: 0.6;
+    margin-right: 5px;
   }
   .about__scroll-range:before {
     width: 10px;
@@ -889,6 +899,10 @@ ul {
     display: block;
     content: "";
   }
+  .about__video-btn {
+    top: 58%;
+    left: 40px;
+  }
 }
 .achievement-list__item {
   padding-left: 30px;
@@ -925,6 +939,10 @@ ul {
     line-height: 22px;
     font-size: 15px;
     margin-bottom: 37px;
+  }
+  .achievement-list__item:before {
+    width: 16px;
+    height: 16px;
   }
   .achievement-list__item:last-child {
     width: 100%;
