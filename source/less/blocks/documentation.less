@@ -16,35 +16,40 @@
   padding-bottom: 8px;
   margin-bottom: 18px;
   border-bottom: 1px dashed @color-blue;
-  &:hover{
+
+  &:hover {
     color: #76d4ff;
     border-bottom: 1px dashed #76d4ff;
   }
-  &:active{
+
+  &:active {
     color: #5da6c7;
     border-bottom: 1px dashed #5da6c7;
   }
 }
 
-.documentation-list__item-link{
+.documentation-list__item-link {
   font-size: 12px;
   line-height: 18px;
-  &:hover{
+
+  &:hover {
     border-bottom: none;
   }
-  &:active{
+
+  &:active {
     border-bottom: none;
   }
 }
 
-.documentation-list__icon{
+.documentation-list__icon {
   padding-right: 18px;
 }
 
 @media (min-width: 1440px) {
   .documentation__wrapper {
-    min-width: 960px;
-    margin-bottom: 30px;
+    max-width: 960px;
+    margin-bottom: 23px;
+    padding-top: 72px;
   }
 
   .documentation-list {
@@ -55,13 +60,30 @@
 
   .documentation-list__item {
     width: 21%;
-    margin-bottom: 63px;
-    &:nth-child(4n){
+    margin-bottom: 60px;
+    padding-bottom: 0;
+
+    &:nth-child(4n) {
       margin-right: 20px;
     }
   }
 
   .documentation__title {
-    margin-bottom: 46px;
+    margin-bottom: 60px;
+  }
+
+  .documentation-list__item-link {
+    font-size: 17px;
+    line-height: 25px;
+    padding-bottom: 7px;
+  }
+
+  .documentation-list__icon {
+    padding-right: 3px;
+    padding-top: 3px;
+    & svg {
+      width: 15px;
+      height: 15px;
+    }
   }
 }
