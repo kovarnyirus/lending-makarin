@@ -356,6 +356,9 @@ ul {
     width: 28px;
     height: 25px;
   }
+  .link {
+    padding-bottom: 5px;
+  }
 }
 .header__wrapper {
   max-width: 320px;
@@ -1030,6 +1033,67 @@ ul {
   padding-bottom: 11px;
   margin-bottom: 46px;
 }
+@media (min-width: 1440px) {
+  .consultation__wrapper {
+    max-width: 821px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 63px;
+  }
+  .consultation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .consultation__item {
+    padding-right: 84px;
+    border-bottom: none;
+    width: 50%;
+    margin-bottom: 26px;
+  }
+  .consultation__item:nth-child(2n) {
+    padding-right: 0;
+    padding-left: 84px;
+    border-right: none;
+    position: relative;
+  }
+  .consultation__item:nth-child(2n):before {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    top: 36px;
+    bottom: 73px;
+    width: 1px;
+    background-color: #ffffff;
+  }
+  .consultation__item-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .consultation__item-description {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 17px;
+  }
+  .consultation__item-cost {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 28px;
+  }
+  .consultation__btn {
+    padding-top: 19px;
+    padding-bottom: 18px;
+    font-size: 16px;
+  }
+  .consultation__bg::after {
+    background-position-x: 0;
+    background-position-y: -517px;
+  }
+}
 .book {
   position: relative;
   z-index: 5;
@@ -1102,26 +1166,27 @@ ul {
     display: -ms-flexbox;
     display: flex;
     margin: auto;
-    margin-top: 44px;
+    margin-top: 61px;
     margin-bottom: 0;
   }
   .book__img-wrapper {
-    height: 632px;
+    height: 567px;
     max-width: 50%;
     width: 50%;
     margin: 0;
   }
   .book__img-wrapper:before {
-    width: 394px;
-    height: 394px;
+    width: 494px;
+    height: 494px;
     background: radial-gradient(at center, #ffffff, #e5e5e5);
-    left: 31%;
-    top: 40%;
+    left: 36%;
+    top: 248px;
   }
   .book__img {
     width: 837px;
-    top: -100px;
-    left: -52%;
+    top: -110px;
+    left: -45%;
+    max-width: 837px;
   }
   .book__wrapper {
     margin-left: 0;
@@ -1133,6 +1198,8 @@ ul {
   }
   .book__title {
     font-size: 39px;
+    line-height: 53px;
+    margin-bottom: 33px;
   }
   .book__description {
     line-height: 26px;
@@ -1142,6 +1209,8 @@ ul {
   .book__download-book {
     line-height: 25px;
     font-size: 17px;
+    margin-top: 47px;
+    padding-bottom: 5px;
   }
 }
 .photo-gallery__wrapper {

@@ -1,4 +1,4 @@
-.consultation{
+.consultation {
   position: relative;
   z-index: 1;
 }
@@ -11,6 +11,7 @@
   top: 0;
   bottom: 0;
   z-index: 1;
+
   &:after {
     position: absolute;
     left: 0;
@@ -90,55 +91,69 @@
 }
 
 
-//.consultation__wrapper {
-//  max-width: 320px;
-//  padding-left: 21px;
-//  padding-right: 21px;
-//  margin: auto;
-//  padding-top: 43px;
-//  padding-bottom: 65px;
-//  z-index: 5;
-//  position: relative;;
-//}
-//
-//.consultation__title {
-//  color: @color-white;
-//  font-size: 23px;
-//  text-align: center;
-//  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-//  margin-bottom: 42px;
-//}
-//
-//@media (min-width: 1440px) {
-//  .consultation__wrapper {
-//    max-width: 741px;
-//    padding-top: 65px;
-//    padding-bottom: 72px;
-//    padding-left: 0;
-//    padding-right: 0;
-//  }
-//
-//  .consultation__btn-run {
-//    margin: auto;
-//    display: block;
-//    min-width: 251px;
-//    padding-top: 29px;
-//    padding-bottom: 29px;
-//    font-size: 16px;
-//    font-weight: bold;
-//  }
-//
-//  .consultation__title {
-//    font-weight: bold;
-//    line-height: normal;
-//    font-size: 35px;
-//    text-align: center;
-//    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-//    & br {
-//      display: none;
-//    }
-//  }
-//  .consultation::before{
-//    background-position-y: -500px;
-//  }
-//}
+@media (min-width: 1440px) {
+  .consultation__wrapper {
+    max-width: 821px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 63px;
+
+  }
+
+  .consultation__list {
+    display: flex;
+  }
+
+  .consultation__item {
+    padding-right: 84px;
+    border-bottom: none;
+    width: 50%;
+    margin-bottom: 26px;
+    &:nth-child(2n) {
+      padding-right: 0;
+      padding-left: 84px;
+      border-right: none;
+      position: relative;
+      &:before{
+        position: absolute;
+        content: '';
+        display: block;
+        left: 0;
+        top: 36px;
+        bottom: 73px;
+        width: 1px;
+        background-color: @color-white;
+      }
+    }
+  }
+
+  .consultation__item-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .consultation__item-description {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 17px;
+  }
+
+  .consultation__item-cost {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 28px;
+  }
+
+  .consultation__btn {
+    padding-top: 19px;
+    padding-bottom: 18px;
+    font-size: 16px;
+  }
+  .consultation__bg::after{
+    background-position-x: -0;
+    background-position-y: -517px;
+  }
+}
