@@ -1170,7 +1170,7 @@ ul {
     margin-bottom: 0;
   }
   .book__img-wrapper {
-    height: 567px;
+    height: 554px;
     max-width: 50%;
     width: 50%;
     margin: 0;
@@ -1241,7 +1241,9 @@ ul {
 }
 @media (min-width: 1440px) {
   .photo-gallery__wrapper {
-    min-width: 960px;
+    max-width: 960px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .photo-gallery__item {
     width: 217px;
@@ -1258,7 +1260,8 @@ ul {
     padding-top: 0;
   }
   .photo-gallery__title {
-    margin-bottom: 38px;
+    margin-bottom: 32px;
+    margin-top: 13px;
   }
 }
 .assistant__wrapper {
