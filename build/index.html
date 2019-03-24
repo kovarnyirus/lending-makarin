@@ -253,8 +253,7 @@
         <!--<source type="image/webp" media="(min-width: 960px)"-->
         <!--srcset="img/desktop-about-autor@1x.webp 1x, img/desktop-about-autor@2x.webp 2x">-->
         <!--<source type="image/webp" srcset="img/mobile-about-author@1x.webp 1x, img/mobile-about-author@2x.webp 2x">-->
-        <!--<source media="(min-width: 960px)"-->
-        <!--srcset="img/desktop-about-autor@1x.png 1x, img/desktop-about-autor@2x.png 2x">-->
+        <source media="(min-width: 960px)" srcset="img/desktop-assistent@1x.png 1x, img/desktop-assistent@2x.png 2x">
         <img src="img/mobile-assistent@1x.png" srcset="img/mobile-assistent@2x.png 2x" alt="author" width="298" height="425" class="assistant__img">
       </picture>
       <button class="video-btn assistant__video-btn">
@@ -279,7 +278,7 @@
       </button>
     </div>
     <div class="comment__list">
-      <div class="gallery-list__item comment__item">
+      <div class="comment__item">
         <picture>
           <source type="image/webp" media="(min-width: 960px)" srcset="img/desktop-comment-user-avatar@1x.webp 1x, img/desktop-comment-user-avatar@2x.webp 2x">
           <source type="image/webp" srcset="img/mobile-comment-user-avatar@1x.webp 1x, img/mobile-comment-user-avatar@2x.webp 2x">
@@ -292,12 +291,12 @@
           erat philosophia cum, quod torquatos efficiantur
         </p>
         <a href="#" class="link comment__item-all-text">Весь отзыв
-          <svg width="4px" height="7px" class="comment__item-all-text-ico">
+          <svg width="7px" height="10px" class="comment__item-all-text-ico">
             <use xlink:href="#icon-arrow-right"></use>
           </svg>
         </a>
       </div>
-      <div class="gallery-list__item comment__item">
+      <div class="comment__item">
         <picture>
           <source type="image/webp" media="(min-width: 960px)" srcset="img/desktop-comment-user-avatar@1x.webp 1x, img/desktop-comment-user-avatar@2x.webp 2x">
           <source type="image/webp" srcset="img/mobile-comment-user-avatar@1x.webp 1x, img/mobile-comment-user-avatar@2x.webp 2x">
@@ -325,13 +324,13 @@
     </h3>
     <div class="accordion answers__accordion">
       <ul class="accordion__list">
-        <li class="accordion__item">
+        <li class="accordion__item active">
           <div class="accordion__arrow-wrapper">
             <svg width="8px" height="10px" class="accordion__arrow">
               <use xlink:href="#icon-arrow-right"></use>
             </svg>
           </div>
-          <h4 class="accordion__item-tile">Curabitur sodales ligula in libero</h4>
+          <h4 class="accordion__item-title">Curabitur sodales ligula in libero</h4>
           <p class="accordion__item-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
             Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
@@ -342,7 +341,7 @@
               <use xlink:href="#icon-arrow-right"></use>
             </svg>
           </div>
-          <h4 class="accordion__item-tile">Curabitur tortor</h4>
+          <h4 class="accordion__item-title">Curabitur tortor</h4>
           <p class="accordion__item-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
             Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
@@ -353,7 +352,7 @@
               <use xlink:href="#icon-arrow-right"></use>
             </svg>
           </div>
-          <h4 class="accordion__item-tile">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          <h4 class="accordion__item-title">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
             inceptos himenaeos</h4>
           <p class="accordion__item-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
@@ -365,7 +364,7 @@
               <use xlink:href="#icon-arrow-right"></use>
             </svg>
           </div>
-          <h4 class="accordion__item-tile">Maecenas mattis</h4>
+          <h4 class="accordion__item-title">Maecenas mattis</h4>
           <p class="accordion__item-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
             Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
@@ -373,10 +372,10 @@
       </ul>
     </div>
     <button class="btn answers__btn">Получить консультацию</button>
-    <div class="answers__men-img">
+    <div class="answers__men-img-wrapper">
       <picture>
         <source type="image/webp" srcset="img/answers-men@1x.webp 1x, img/answers-men@2x.webp 2x">
-        <img src="img/answers-men@1x.png" srcset="img/answers-men@2x.png 2x" width="626" height="956" alt="изображение автора">
+        <img class="answers__men-img" src="img/answers-men@1x.png" srcset="img/answers-men@2x.png 2x" width="626" height="956" alt="изображение автора">
       </picture>
     </div>
   </div>

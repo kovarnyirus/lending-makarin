@@ -47,3 +47,94 @@
 }
 
 
+@media (min-width: 1440px) {
+  .assistant {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(213, 214, 218, 1));
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 1174px;
+      height: 970px;
+      background-image: url("../img/desktop-assistent-elipse.svg");
+      background-repeat: no-repeat;
+      top: -50px;
+    }
+  }
+
+  .assistant__wrapper {
+    max-width: 960px;
+    min-height: 879px;
+    display: flex;
+    margin-top: -204px;
+    padding-top: 170px;
+    padding-left: 0;
+    padding-right: 0;
+    background-image: none;
+    padding-bottom: 0;
+  }
+
+  .assistant__img-block {
+    order: 1;
+    width: 50%;
+  }
+
+  .assistant__text-block {
+    order: 2;
+    width: 50%;
+    position: relative;
+    margin-top: 159px;
+  }
+
+  .assistant__img {
+    width: 578px;
+    max-width: 578px;
+    top: 5px;
+    left: -96px;
+
+  }
+
+  .assistant__watch-video-btn {
+    position: static;
+    transform: none;
+    width: 347px;
+    max-width: 347px;
+    padding-top: 29px;
+    padding-bottom: 28px;
+
+  }
+
+  .assistant__video-btn {
+    top: 327px;
+    right: 51px;
+    left: auto;
+    &:before{
+      left: auto;
+      right: -43px;
+      top: 143px;
+  }
+    &:after{
+      left: auto;
+      right: -50px;
+      top: 90px;
+      transform: rotate(252deg);
+    }
+  }
+
+  .assistant__title {
+    line-height: 55px;
+    margin-bottom: 30px;
+  }
+
+  .assistant__description {
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 60px;
+  }
+}

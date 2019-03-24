@@ -33,7 +33,7 @@ for (let i = 0; i < programAccordions.length; i++) {
 for (let i = 0; i < answersAccordions.length; i++) {
   answersAccordions[i].addEventListener("click", function(event) {
     console.log(event.target.className);
-    if((event.target.className === 'accordion__item-tile') || (event.target.className.animVal === 'accordion__arrow')){
+    if((event.target.className === 'accordion__item-title') || (event.target.className.animVal === 'accordion__arrow')){
       this.classList.toggle("active");
     }
   });

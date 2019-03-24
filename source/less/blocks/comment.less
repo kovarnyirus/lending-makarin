@@ -11,7 +11,7 @@
   margin-right: auto;
 }
 
-.comment__list{
+.comment__list {
   margin-top: 16px;
 }
 
@@ -67,12 +67,20 @@
 }
 
 @media (min-width: 1440px) {
+  .comment{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+  }
   .comment__wrapper {
-    max-width: 100%;
+    max-width: 960px;
     margin-left: 241px;
-    margin-bottom: -240px;
     z-index: 10;
     position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 81px;
   }
 
   .comment__item {
@@ -84,6 +92,7 @@
     padding-right: 40px;
     position: relative;
     background-color: @color-white;
+
     &:not(:first-child) {
       display: flex;
     }
@@ -102,7 +111,21 @@
   }
 
   .comment__title {
-    margin-bottom: 46px;
+    width: 80%;
+    margin-top: 13px;
+    margin-bottom: 50px;
+  }
+
+  .comment__list {
+    margin-top: 0;
+    display: flex;
+    position: relative;
+    width: 1200px;
+    min-width: 1199px;
+  }
+
+  .comment__item {
+   min-width: 600px;
   }
 
   .comment__item-user-avatar {
@@ -115,6 +138,7 @@
   .comment__item-title {
     width: 100%;
     padding-top: 0;
+    font-size: 20px;
   }
 
   .comment__item-text {
@@ -124,21 +148,20 @@
     line-height: 24px;
     font-size: 15px;
     color: #000000;
-    opacity: 0.6
+    opacity: 0.6;
+    margin-bottom: 7px;
   }
 
   .comment__item-all-text {
     line-height: 24px;
     font-size: 15px;
     border-bottom: 1px dashed @color-blue;
+    margin-left: 4px;
   }
 
   .comment__item-all-text-ico {
     display: inline-block;
     margin-left: 10px;
     transform: rotate(90deg);
-  }
-  .comment__arrows{
-    margin-right: 241px;
   }
 }
