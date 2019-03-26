@@ -39,7 +39,7 @@
   margin-bottom: 5px;
 }
 
-.price-lists__item-cost--padding-bottom{
+.price-lists__item-cost--padding-bottom {
   margin-bottom: 15px;
 }
 
@@ -52,7 +52,8 @@
   text-align: center;
   opacity: 0.6;
   margin-bottom: 16px;
-  &:last-of-type{
+
+  &:last-of-type {
     margin-bottom: 36px;
   }
 }
@@ -66,12 +67,20 @@
 }
 
 .price-lists__item-description--amount {
-   margin-bottom: 0;
- }
+  margin-bottom: 0;
+}
 
 .price-lists__item-description--font {
   margin-bottom: 36px;
 }
+
+@media (min-width: 768px) and (max-width: 1139px) {
+  .price-lists {
+    display: none;
+  }
+}
+
+
 @media (min-width: 1440px) {
   .price-lists__wrapper {
     max-width: 960px;
@@ -115,7 +124,7 @@
     line-height: 25px;
   }
 
-  .price-lists{
+  .price-lists {
     display: none;
   }
 }

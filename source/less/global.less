@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
 }
 
-p{
+p {
   margin: 0;
   padding: 0;
 }
@@ -62,11 +62,12 @@ a {
   color: @color-blue;
 }
 
-.link{
+.link {
   &:hover {
     color: #76D4FF;
     border-bottom: 1px dashed #76D4FF;
   }
+
   &:active {
     color: #5DA6C7;
     border-bottom: 1px dashed #5DA6C7;
@@ -284,6 +285,35 @@ ul {
     line-height: 56px;
     font-size: 40px;
   }
+
+  .video-btn {
+    width: 108px;
+    height: 108px;
+    top: 52%;
+    left: 50px;
+
+    &:before {
+      line-height: 18px;
+      font-size: 12px;
+      opacity: 0.6;
+      top: 32px;
+      left: -105px;
+    }
+
+    &:after {
+      top: 73px;
+      height: 27px;
+    }
+  }
+
+  .icon-play {
+    width: 28px;
+    height: 25px;
+  }
+
+  .link {
+    padding-bottom: 5px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -338,11 +368,13 @@ ul {
       height: 27px;
     }
   }
+
   .icon-play {
     width: 28px;
     height: 25px;
   }
-  .link{
+
+  .link {
     padding-bottom: 5px;
   }
 }

@@ -66,6 +66,100 @@
   display: none;
 }
 
+@media (min-width: 768px) and (max-width: 1139px) {
+  .comment__wrapper {
+    max-width: 760px;
+    margin-left: auto;
+    z-index: 10;
+    position: relative;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 81px;
+  }
+
+  .comment__item {
+    width: 600px;
+    margin-right: 40px;
+    padding-left: 223px;
+    padding-top: 62px;
+    padding-bottom: 46px;
+    padding-right: 40px;
+    position: relative;
+    background-color: @color-white;
+
+    &:not(:first-child) {
+      display: flex;
+    }
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 105px;
+      height: 53px;
+      right: 23px;
+      top: 0;
+      background-image: url("../img/quote.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .comment__title {
+    width: 80%;
+    margin-top: 13px;
+    margin-bottom: 50px;
+  }
+
+  .comment__list {
+    margin-top: 0;
+    display: flex;
+    position: relative;
+    width: 1200px;
+    min-width: 1199px;
+  }
+
+  .comment__item {
+   min-width: 600px;
+  }
+
+  .comment__item-user-avatar {
+    position: absolute;
+    left: 35px;
+    width: 160px;
+    height: 160px;
+  }
+
+  .comment__item-title {
+    width: 100%;
+    padding-top: 0;
+    font-size: 20px;
+  }
+
+  .comment__item-text {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 15px;
+    color: #000000;
+    opacity: 0.6;
+    margin-bottom: 7px;
+  }
+
+  .comment__item-all-text {
+    line-height: 24px;
+    font-size: 15px;
+    border-bottom: 1px dashed @color-blue;
+    margin-left: 4px;
+  }
+
+  .comment__item-all-text-ico {
+    display: inline-block;
+    margin-left: 10px;
+    transform: rotate(90deg);
+  }
+}
+
 @media (min-width: 1440px) {
   .comment{
     max-width: 1440px;

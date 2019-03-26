@@ -38,6 +38,33 @@
   top: 5px;
 }
 
+
+@media (min-width: 768px) and (max-width: 1139px) {
+  .contacts__wrapper {
+    max-width: 768px;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts__map {
+    order: 1;
+  }
+  .contacts__container{
+    order: 2;
+    width: 255px;
+    padding-top: 34px;
+  }
+  .contacts__address{
+    margin-bottom: 61px;
+    padding-right: 0px;
+  }
+}
+
+
+
 @media (min-width: 1440px) {
   .contacts__wrapper {
     max-width: 960px;
