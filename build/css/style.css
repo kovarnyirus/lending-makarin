@@ -718,7 +718,7 @@ ul {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .header__wrapper {
     max-width: 768px;
     padding-left: 69px;
@@ -1079,7 +1079,7 @@ ul {
 .about__social-link:active {
   background-color: #ECECEC;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .about__wrapper {
     max-width: 768px;
     padding-left: 69px;
@@ -1364,7 +1364,7 @@ ul {
   left: 0;
   top: 4px;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .achievement-list__item {
     font-size: 15px;
     line-height: 22px;
@@ -1482,7 +1482,7 @@ ul {
   padding-bottom: 11px;
   margin-bottom: 46px;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .consultation__wrapper {
     max-width: 768px;
   }
@@ -1668,7 +1668,7 @@ ul {
   top: -34px;
   left: 0;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .book {
     max-width: 768px;
     display: -webkit-box;
@@ -1803,7 +1803,7 @@ ul {
 .photo-gallery__item {
   margin-top: 11px;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .photo-gallery {
     position: relative;
     z-index: 5;
@@ -1911,7 +1911,7 @@ ul {
 .assistant__video-btn {
   top: 62%;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .assistant {
     max-width: 768px;
     margin-left: auto;
@@ -2166,7 +2166,7 @@ ul {
 .comment__arrows {
   z-index: 10;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .comment__wrapper {
     max-width: 760px;
     margin-left: auto;
@@ -2364,7 +2364,7 @@ ul {
 .answers__men-img-wrapper {
   display: none;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .answers__wrapper {
     max-width: 960px;
     padding-left: 70px;
@@ -2474,7 +2474,7 @@ ul {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .accordion__item-title {
     font-weight: bold;
     line-height: 29px;
@@ -2635,7 +2635,7 @@ ul {
 .program__item.active .program-toggle:after {
   opacity: 0;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .program__wrapper {
     max-width: 768px;
     padding-top: 15px;
@@ -2761,7 +2761,7 @@ ul {
   height: 193px;
   background-image: url("../img/mobile-patients-area-map@x1.jpg");
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .patients-area__wrapper {
     max-width: 768px;
     padding-top: 15px;
@@ -2876,7 +2876,7 @@ ul {
   padding-right: 45px;
   margin-top: -9px;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .certificate__wrapper {
     max-width: 768px;
     padding-left: 70px;
@@ -3025,7 +3025,7 @@ ul {
 .documentation-list__icon {
   padding-right: 18px;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .documentation__wrapper {
     max-width: 768px;
     padding-left: 130px;
@@ -3173,7 +3173,7 @@ ul {
 .price-lists__item-description--font {
   margin-bottom: 36px;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .price-lists {
     display: none;
   }
@@ -3253,7 +3253,7 @@ ul {
   left: 0;
   top: 5px;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .contacts__wrapper {
     max-width: 768px;
     padding-left: 70px;
@@ -3320,7 +3320,7 @@ ul {
   background-size: cover;
   border-radius: 5px;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .map {
     width: 358px;
     height: 324px;
@@ -3384,7 +3384,7 @@ ul {
   display: block;
   margin: auto;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .page-footer__wrapper {
     max-width: 768px;
     padding-left: 70px;

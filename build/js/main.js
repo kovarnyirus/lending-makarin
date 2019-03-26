@@ -107,7 +107,7 @@ $('.comment__list').slick({
   leftMode: true,
   variableWidth: true,
   appendArrows: $('.comment__arrows'),
-  prevArrow: $('.arrow__left'),
-  nextArrow: $('.arrow__right'),
+  prevArrow: $('.comment__arrow-left'),
+  nextArrow: $('.comment__arrow-right'),
 
 });
