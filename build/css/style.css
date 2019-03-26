@@ -256,54 +256,43 @@ ul {
           align-items: center;
   padding-left: 0;
   padding-right: 0;
+  z-index: 2;
 }
 .video-btn:before {
   position: absolute;
   display: block;
-  top: -15px;
-  left: -102px;
   content: "Смотреть видео";
   width: 65px;
   height: 36px;
   font-size: 12px;
   line-height: 18px;
   opacity: 0.43;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-135px, -49px);
+          transform: translate(-135px, -49px);
 }
 .video-btn:after {
   content: "";
   position: absolute;
   display: block;
-  top: 24px;
-  left: -73px;
   background-image: url("../img/about-line.svg");
   width: 66px;
   height: 25px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-106px, -5px);
+          transform: translate(-106px, -5px);
 }
 .video-btn:hover {
   padding: 15px;
   -webkit-box-sizing: initial;
           box-sizing: initial;
 }
-.video-btn:hover:before {
-  top: 0;
-  left: -87px;
-}
-.video-btn:hover:after {
-  left: -58px;
-  top: 39px;
-}
 .video-btn:active {
   padding: 7px;
   -webkit-box-sizing: initial;
           box-sizing: initial;
-}
-.video-btn:active:before {
-  left: -93px;
-  top: 31px;
-}
-.video-btn:active:after {
-  left: -65px;
-  top: 83px;
 }
 .icon-play {
   width: 17px;
@@ -343,12 +332,17 @@ ul {
     line-height: 18px;
     font-size: 12px;
     opacity: 0.6;
-    top: 32px;
-    left: -105px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-145px, -60%);
+            transform: translate(-145px, -60%);
   }
   .video-btn:after {
-    top: 73px;
     height: 27px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-120px, 20px);
+            transform: translate(-120px, 20px);
   }
   .icon-play {
     width: 28px;
@@ -403,12 +397,17 @@ ul {
     line-height: 18px;
     font-size: 12px;
     opacity: 0.6;
-    top: 32px;
-    left: -105px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-159px, -22px);
+            transform: translate(-159px, -22px);
   }
   .video-btn:after {
-    top: 73px;
     height: 27px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-128px, 18px);
+            transform: translate(-128px, 18px);
   }
   .icon-play {
     width: 28px;
@@ -979,6 +978,9 @@ ul {
         -ms-flex-align: center;
             align-items: center;
   }
+  .main-nav__item {
+    margin-bottom: 0;
+  }
 }
 .about {
   padding-top: 108px;
@@ -1105,7 +1107,7 @@ ul {
   .about__video-wrapper {
     position: absolute;
     right: 0;
-    bottom: 0 ;
+    bottom: 0;
   }
   .about__achievement {
     max-width: 366px;
@@ -1331,10 +1333,6 @@ ul {
     display: block;
     content: "";
   }
-  .about__video-btn {
-    top: 58%;
-    left: 40px;
-  }
   .about__social {
     right: auto;
     left: -160px;
@@ -1343,6 +1341,10 @@ ul {
   .about__social-link {
     width: 37px;
     height: 37px;
+  }
+  .about__video-btn {
+    top: 58%;
+    left: 41px;
   }
 }
 .achievement-list__item {
@@ -1978,24 +1980,23 @@ ul {
     margin-bottom: 111px;
   }
   .assistant__video-btn {
-    top: auto;
-    bottom: 40%;
-    right: 50%;
-    left: auto;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
+    top: 70%%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   .assistant__video-btn:before {
-    left: auto;
-    right: -43px;
-    top: 143px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(35px, 85px);
+            transform: translate(35px, 85px);
   }
   .assistant__video-btn:after {
-    left: auto;
-    right: -50px;
-    top: 90px;
-    -webkit-transform: rotate(252deg);
-            transform: rotate(252deg);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: rotate(250deg) translate(-45px, 25px);
+            transform: rotate(250deg) translate(-45px, 25px);
+    color: rgba(0, 0, 0, 0.6);
   }
   .assistant__title {
     line-height: 55px;
@@ -2069,21 +2070,22 @@ ul {
     padding-bottom: 28px;
   }
   .assistant__video-btn {
-    top: 327px;
-    right: 51px;
-    left: auto;
+    top: 46%;
+    left: 67%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   .assistant__video-btn:before {
-    left: auto;
-    right: -43px;
-    top: 143px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(32px, 90px);
+            transform: translate(32px, 90px);
   }
   .assistant__video-btn:after {
-    left: auto;
-    right: -50px;
-    top: 90px;
-    -webkit-transform: rotate(252deg);
-            transform: rotate(252deg);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: rotate(252deg) translate(-45px, 25px);
+            transform: rotate(252deg) translate(-45px, 25px);
   }
   .assistant__title {
     line-height: 55px;

@@ -196,59 +196,43 @@ ul {
   align-items: center;
   padding-left: 0;
   padding-right: 0;
+  z-index: 2;
 
   &:before {
     position: absolute;
     display: block;
-    top: -15px;
-    left: -102px;
     content: "Смотреть видео";
     width: 65px;
     height: 36px;
     font-size: 12px;
     line-height: 18px;
     opacity: 0.43;
+    top: 50%;
+    left: 50%;
+    transform: translate(-135px, -49px);
   }
 
   &:after {
     content: "";
     position: absolute;
     display: block;
-    top: 24px;
-    left: -73px;
     background-image: url("../img/about-line.svg");
     width: 66px;
     height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-106px, -5px);
   }
 
   &:hover {
     padding: 15px;
     box-sizing: initial;
-
-    &:before {
-      top: 0;
-      left: -87px;
-    }
-
-    &:after {
-      left: -58px;
-      top: 39px;
-    }
   }
 
   &:active {
     padding: 7px;
     box-sizing: initial;
 
-    &:before {
-      left: -93px;
-      top: 31px;
-    }
-
-    &:after {
-      left: -65px;
-      top: 83px;
-    }
   }
 }
 
@@ -296,13 +280,16 @@ ul {
       line-height: 18px;
       font-size: 12px;
       opacity: 0.6;
-      top: 32px;
-      left: -105px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-145px, -60%);
     }
 
     &:after {
-      top: 73px;
       height: 27px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-120px, 20px);
     }
   }
 
@@ -374,13 +361,16 @@ ul {
       line-height: 18px;
       font-size: 12px;
       opacity: 0.6;
-      top: 32px;
-      left: -105px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-159px, -22px);
     }
 
     &:after {
-      top: 73px;
       height: 27px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-128px, 18px);
     }
   }
 
