@@ -66,6 +66,10 @@
   display: none;
 }
 
+.comment__arrows{
+  z-index: 10;
+}
+
 @media (min-width: 768px) and (max-width: 1139px) {
   .comment__wrapper {
     max-width: 760px;
@@ -111,7 +115,7 @@
   }
 
   .comment__list {
-    margin-top: 0;
+
     display: flex;
     position: relative;
     width: 1200px;
@@ -216,10 +220,15 @@
     position: relative;
     width: 1200px;
     min-width: 1199px;
+    margin-top: -110px;
   }
 
   .comment__item {
    min-width: 600px;
+  }
+  .comment__item-wrapper{
+    padding-top: 110px;
+    margin-bottom: 110px;
   }
 
   .comment__item-user-avatar {

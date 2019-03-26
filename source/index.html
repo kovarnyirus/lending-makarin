@@ -191,18 +191,68 @@
   <div class="photo-gallery__wrapper">
     <h3 class="photo-gallery__title">Швы - фото</h3>
     <div class="arrows photo-gallery__arrows">
-      <button class="arrow arrow__left">
+      <button class="arrow arrow__left photo-gallery-arrow-left">
         <svg width="4px" height="7px">
           <use xlink:href="#icon-arrow-left"></use>
         </svg>
       </button>
-      <button class="arrow arrow__right">
+      <button class="arrow arrow__right photo-gallery-arrow-right">
         <svg width="4px" height="7px">
           <use xlink:href="#icon-arrow-right"></use>
         </svg>
       </button>
     </div>
     <div class="photo-gallery__list">
+      <div class="photo-gallery__item">
+        <a href="#" class="photo-gallery__link">
+          <picture>
+            <source type="image/webp"
+                    srcset="img/mobile-gallery-img@1x.webp 1x, img/mobile-gallery-img@2x.webp 2x">
+            <img src="img/mobile-gallery-img@1x.jpg" srcset="img/mobile-gallery-img@2x.png 2x" width="276"
+                 height="276" alt="фото">
+          </picture>
+        </a>
+      </div>
+      <div class="photo-gallery__item">
+        <a href="#" class="photo-gallery__link">
+          <picture>
+            <source type="image/webp"
+                    srcset="img/mobile-gallery-img@1x.webp 1x, img/mobile-gallery-img@2x.webp 2x">
+            <img src="img/mobile-gallery-img@1x.jpg" srcset="img/mobile-gallery-img@2x.png 2x" width="276"
+                 height="276" alt="фото">
+          </picture>
+        </a>
+      </div>
+      <div class="photo-gallery__item">
+        <a href="#" class="photo-gallery__link">
+          <picture>
+            <source type="image/webp"
+                    srcset="img/mobile-gallery-img@1x.webp 1x, img/mobile-gallery-img@2x.webp 2x">
+            <img src="img/mobile-gallery-img@1x.jpg" srcset="img/mobile-gallery-img@2x.png 2x" width="276"
+                 height="276" alt="фото">
+          </picture>
+        </a>
+      </div>
+      <div class="photo-gallery__item">
+        <a href="#" class="photo-gallery__link">
+          <picture>
+            <source type="image/webp"
+                    srcset="img/mobile-gallery-img@1x.webp 1x, img/mobile-gallery-img@2x.webp 2x">
+            <img src="img/mobile-gallery-img@1x.jpg" srcset="img/mobile-gallery-img@2x.png 2x" width="276"
+                 height="276" alt="фото">
+          </picture>
+        </a>
+      </div>
+      <div class="photo-gallery__item">
+        <a href="#" class="photo-gallery__link">
+          <picture>
+            <source type="image/webp"
+                    srcset="img/mobile-gallery-img@1x.webp 1x, img/mobile-gallery-img@2x.webp 2x">
+            <img src="img/mobile-gallery-img@1x.jpg" srcset="img/mobile-gallery-img@2x.png 2x" width="276"
+                 height="276" alt="фото">
+          </picture>
+        </a>
+      </div>
       <div class="photo-gallery__item">
         <a href="#" class="photo-gallery__link">
           <picture>
@@ -234,7 +284,7 @@
     <div class="assistant__img-block">
       <picture>
         <source media="(min-width: 768px)"
-        srcset="img/desktop-assistent@1x.png 1x, img/desktop-assistent@2x.png 2x">
+                srcset="img/desktop-assistent@1x.png 1x, img/desktop-assistent@2x.png 2x">
         <img src="img/mobile-assistent@1x.png" srcset="img/mobile-assistent@2x.png 2x" alt="author" width="298"
              height="425" class="assistant__img">
       </picture>
@@ -260,50 +310,105 @@
       </button>
     </div>
     <div class="comment__list">
-      <div class="comment__item">
-        <picture>
-          <source type="image/webp" media="(min-width: 960px)"
-                  srcset="img/desktop-comment-user-avatar@1x.webp 1x, img/desktop-comment-user-avatar@2x.webp 2x">
-          <source type="image/webp"
-                  srcset="img/mobile-comment-user-avatar@1x.webp 1x, img/mobile-comment-user-avatar@2x.webp 2x">
-          <source media="(min-width: 960px)"
-                  srcset="img/desktop-comment-user-avatar@1x.jpg 1x, img/desktop-comment-user-avatar@2x.jpg 2x">
-          <img src="img/mobile-comment-user-avatar@1x.jpg" srcset="img/mobile-comment-user-avatar@2x.png 2x"
-               alt="автар" class="comment__item-user-avatar">
-        </picture>
-        <h4 class="comment__item-title">Татьяна Лаврищева </h4>
-        <p class="comment__item-text">
-          Lorem ipsum dolor sit amet, laudem aperiam indoctum no nam, an minim quaestio concludaturque mei. No wisi
-          erat philosophia cum, quod torquatos efficiantur
-        </p>
-        <a href="#" class="link comment__item-all-text">Весь отзыв
-          <svg width="7px" height="10px" class="comment__item-all-text-ico">
-            <use xlink:href="#icon-arrow-right"></use>
-          </svg>
-        </a>
+      <div class="comment__item-wrapper">
+        <div class="comment__item">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/desktop-comment-user-avatar@1x.webp 1x, img/desktop-comment-user-avatar@2x.webp 2x">
+            <source type="image/webp"
+                    srcset="img/mobile-comment-user-avatar@1x.webp 1x, img/mobile-comment-user-avatar@2x.webp 2x">
+            <source media="(min-width: 960px)"
+                    srcset="img/desktop-comment-user-avatar@1x.jpg 1x, img/desktop-comment-user-avatar@2x.jpg 2x">
+            <img src="img/mobile-comment-user-avatar@1x.jpg" srcset="img/mobile-comment-user-avatar@2x.png 2x"
+                 alt="автар" class="comment__item-user-avatar">
+          </picture>
+          <h4 class="comment__item-title">Татьяна Лаврищева </h4>
+          <p class="comment__item-text">
+            Lorem ipsum dolor sit amet, laudem aperiam indoctum no nam, an minim quaestio concludaturque mei. No wisi
+            erat philosophia cum, quod torquatos efficiantur
+          </p>
+          <a href="#" class="link comment__item-all-text">Весь отзыв
+            <svg width="7px" height="10px" class="comment__item-all-text-ico">
+              <use xlink:href="#icon-arrow-right"></use>
+            </svg>
+          </a>
+        </div>
       </div>
-      <div class="comment__item">
-        <picture>
-          <source type="image/webp" media="(min-width: 960px)"
-                  srcset="img/desktop-comment-user-avatar@1x.webp 1x, img/desktop-comment-user-avatar@2x.webp 2x">
-          <source type="image/webp"
-                  srcset="img/mobile-comment-user-avatar@1x.webp 1x, img/mobile-comment-user-avatar@2x.webp 2x">
-          <source media="(min-width: 960px)"
-                  srcset="img/desktop-comment-user-avatar@1x.jpg 1x, img/desktop-comment-user-avatar@2x.jpg 2x">
-          <img src="img/mobile-comment-user-avatar@1x.jpg" srcset="img/mobile-comment-user-avatar@2x.png 2x"
-               alt="автар" class="comment__item-user-avatar">
-        </picture>
-        <h4 class="comment__item-title">Татьяна Лаврищева </h4>
-        <p class="comment__item-text">
-          Lorem ipsum dolor sit amet, laudem aperiam indoctum no nam, an minim quaestio concludaturque mei. No wisi
-          erat philosophia cum, quod torquatos efficiantur
-        </p>
-        <a href="#" class="link comment__item-all-text">Весь отзыв
-          <svg width="4px" height="7px" class="comment__item-all-text-ico">
-            <use xlink:href="#icon-arrow-right"></use>
-          </svg>
-        </a>
+      <div class="comment__item-wrapper">
+        <div class="comment__item">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/desktop-comment-user-avatar@1x.webp 1x, img/desktop-comment-user-avatar@2x.webp 2x">
+            <source type="image/webp"
+                    srcset="img/mobile-comment-user-avatar@1x.webp 1x, img/mobile-comment-user-avatar@2x.webp 2x">
+            <source media="(min-width: 960px)"
+                    srcset="img/desktop-comment-user-avatar@1x.jpg 1x, img/desktop-comment-user-avatar@2x.jpg 2x">
+            <img src="img/mobile-comment-user-avatar@1x.jpg" srcset="img/mobile-comment-user-avatar@2x.png 2x"
+                 alt="автар" class="comment__item-user-avatar">
+          </picture>
+          <h4 class="comment__item-title">Татьяна Лаврищева </h4>
+          <p class="comment__item-text">
+            Lorem ipsum dolor sit amet, laudem aperiam indoctum no nam, an minim quaestio concludaturque mei. No wisi
+            erat philosophia cum, quod torquatos efficiantur
+          </p>
+          <a href="#" class="link comment__item-all-text">Весь отзыв
+            <svg width="4px" height="7px" class="comment__item-all-text-ico">
+              <use xlink:href="#icon-arrow-right"></use>
+            </svg>
+          </a>
+        </div>
       </div>
+
+      <div class="comment__item-wrapper">
+        <div class="comment__item">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/desktop-comment-user-avatar@1x.webp 1x, img/desktop-comment-user-avatar@2x.webp 2x">
+            <source type="image/webp"
+                    srcset="img/mobile-comment-user-avatar@1x.webp 1x, img/mobile-comment-user-avatar@2x.webp 2x">
+            <source media="(min-width: 960px)"
+                    srcset="img/desktop-comment-user-avatar@1x.jpg 1x, img/desktop-comment-user-avatar@2x.jpg 2x">
+            <img src="img/mobile-comment-user-avatar@1x.jpg" srcset="img/mobile-comment-user-avatar@2x.png 2x"
+                 alt="автар" class="comment__item-user-avatar">
+          </picture>
+          <h4 class="comment__item-title">Татьяна Лаврищева </h4>
+          <p class="comment__item-text">
+            Lorem ipsum dolor sit amet, laudem aperiam indoctum no nam, an minim quaestio concludaturque mei. No wisi
+            erat philosophia cum, quod torquatos efficiantur
+          </p>
+          <a href="#" class="link comment__item-all-text">Весь отзыв
+            <svg width="4px" height="7px" class="comment__item-all-text-ico">
+              <use xlink:href="#icon-arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="comment__item-wrapper">
+        <div class="comment__item">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/desktop-comment-user-avatar@1x.webp 1x, img/desktop-comment-user-avatar@2x.webp 2x">
+            <source type="image/webp"
+                    srcset="img/mobile-comment-user-avatar@1x.webp 1x, img/mobile-comment-user-avatar@2x.webp 2x">
+            <source media="(min-width: 960px)"
+                    srcset="img/desktop-comment-user-avatar@1x.jpg 1x, img/desktop-comment-user-avatar@2x.jpg 2x">
+            <img src="img/mobile-comment-user-avatar@1x.jpg" srcset="img/mobile-comment-user-avatar@2x.png 2x"
+                 alt="автар" class="comment__item-user-avatar">
+          </picture>
+          <h4 class="comment__item-title">Татьяна Лаврищева </h4>
+          <p class="comment__item-text">
+            Lorem ipsum dolor sit amet, laudem aperiam indoctum no nam, an minim quaestio concludaturque mei. No wisi
+            erat philosophia cum, quod torquatos efficiantur
+          </p>
+          <a href="#" class="link comment__item-all-text">Весь отзыв
+            <svg width="4px" height="7px" class="comment__item-all-text-ico">
+              <use xlink:href="#icon-arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -365,7 +470,8 @@
     <div class="answers__men-img-wrapper">
       <picture>
         <source type="image/webp" srcset="img/answers-men@1x.webp 1x, img/answers-men@2x.webp 2x">
-        <img class="answers__men-img" src="img/answers-men@1x.png" srcset="img/answers-men@2x.png 2x" width="626" height="956"
+        <img class="answers__men-img" src="img/answers-men@1x.png" srcset="img/answers-men@2x.png 2x" width="626"
+             height="956"
              alt="изображение автора">
       </picture>
     </div>
@@ -441,40 +547,64 @@
   <div class="certificate__wrapper">
     <h3 class="certificate__title">Лицензии, сертификаты, награды</h3>
     <div class="arrows certificate__arrows">
-      <button class="arrow arrow__left">
+      <button class="arrow arrow__left certificate__arrow-left">
         <svg width="4px" height="7px">
           <use xlink:href="#icon-arrow-left"></use>
         </svg>
       </button>
-      <button class="arrow arrow__right">
+      <button class="arrow arrow__right certificate__arrow-right">
         <svg width="4px" height="7px">
           <use xlink:href="#icon-arrow-right"></use>
         </svg>
       </button>
     </div>
     <div class="certificate__gallery">
-      <div class="certificate__item">
-        <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
-        <div class="certificate__item-description">
-          Lorem ipsum dolor sit amet, consectetur
+      <div class="certificate__item-wrapper">
+        <div class="certificate__item">
+          <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
+          <div class="certificate__item-description">
+            Lorem ipsum dolor sit amet, consectetur
+          </div>
         </div>
       </div>
-      <div class="certificate__item">
-        <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
-        <div class="certificate__item-description">
-          Lorem ipsum dolor sit amet, consectetur
+      <div class="certificate__item-wrapper">
+        <div class="certificate__item">
+          <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
+          <div class="certificate__item-description">
+            Lorem ipsum dolor sit amet, consectetur
+          </div>
         </div>
       </div>
-      <div class="certificate__item">
-        <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
-        <div class="certificate__item-description">
-          Lorem ipsum dolor sit amet, consectetur
+      <div class="certificate__item-wrapper">
+        <div class="certificate__item">
+          <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
+          <div class="certificate__item-description">
+            Lorem ipsum dolor sit amet, consectetur
+          </div>
         </div>
       </div>
-      <div class="certificate__item">
-        <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
-        <div class="certificate__item-description">
-          Lorem ipsum dolor sit amet, consectetur
+      <div class="certificate__item-wrapper">
+        <div class="certificate__item">
+          <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
+          <div class="certificate__item-description">
+            Lorem ipsum dolor sit amet, consectetur
+          </div>
+        </div>
+      </div>
+      <div class="certificate__item-wrapper">
+        <div class="certificate__item">
+          <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
+          <div class="certificate__item-description">
+            Lorem ipsum dolor sit amet, consectetur
+          </div>
+        </div>
+      </div>
+      <div class="certificate__item-wrapper">
+        <div class="certificate__item">
+          <img src="img/mobile-certificate@1x.png" alt="автар" width="147" class="certificate__item-img">
+          <div class="certificate__item-description">
+            Lorem ipsum dolor sit amet, consectetur
+          </div>
         </div>
       </div>
     </div>
@@ -663,6 +793,7 @@
 <div class="popup-overlay popup-overlay--closed"></div>
 
 <script type="text/javascript" src="js/jQuery.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
