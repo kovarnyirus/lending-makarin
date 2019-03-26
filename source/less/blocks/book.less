@@ -68,6 +68,69 @@
   left: 0;
 }
 
+
+@media (min-width: 768px) and  (max-width: 1139px) {
+  .book {
+    max-width: 768px;
+    display: flex;
+    margin: auto;
+    margin-top: 61px;
+    margin-bottom: 0;
+  }
+
+  .book__img-wrapper {
+    height: 554px;
+    max-width: 50%;
+    width: 50%;
+    margin: 0;
+
+    &:before {
+      width: 494px;
+      height: 494px;
+      background: radial-gradient(at center, #ffffff, #e5e5e5);
+      left: 36%;
+      top: 248px;
+    }
+  }
+
+  .book__img {
+    width: 537px;
+    top: -100px;
+    max-width: 837px;
+  }
+
+  .book__wrapper {
+    margin-left: 0;
+    width: 50%;
+    margin: 0;
+    padding-left: 0;
+    margin-top: 0;
+    padding-right: 57px;
+  }
+
+  .book__title {
+    font-size: 39px;
+    line-height: 53px;
+    margin-bottom: 33px;
+    z-index: 10;
+    position: relative;
+  }
+
+  .book__description {
+    line-height: 26px;
+    font-size: 15px;
+    opacity: 0.7;
+  }
+
+  .book__download-book {
+    line-height: 25px;
+    font-size: 17px;
+    margin-top: 47px;
+    padding-bottom: 5px;
+  }
+}
+
+
 @media (min-width: 1440px) {
   .book {
     max-width: 960px;

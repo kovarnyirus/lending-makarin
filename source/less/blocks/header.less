@@ -44,13 +44,49 @@
   align-items: flex-start;
 }
 
+@media (min-width: 768px) and (max-width: 1139px) {
+  .header__wrapper {
+    max-width: 768px;
+    padding-left: 69px;
+    padding-right: 69px;
+    padding-top: 35px;
+    justify-content: flex-start;
+  }
+
+  .header-contacts {
+    position: absolute;
+    right: 69px;
+    top: 35px;
+  }
+
+  .header__tel-ico {
+    display: none;
+  }
+
+  .header-contacts__tel {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+    color: #000000;
+    padding-left: 25px;
+    position: relative;
+    font-family: "Cambria", "Arial", sans-serif;
+  }
+
+  .header__logo-img{
+    width: 270px;
+    margin-left: 38px;
+  }
+}
+
+
 @media (min-width: 1440px) {
   .header__wrapper {
     max-width: 1294px;
     padding-left: 0;
     padding-right: 0;
     padding-top: 22px;
-
+    justify-content: space-between;
   }
 
   .header__tel-ico {
@@ -78,13 +114,13 @@
     display: flex;
     flex-direction: column;
     align-items: end;
+    position: static;
   }
 
   .header-contacts__tel {
     font-size: 14px;
     color: #000000;
     font-weight: bold;
-
   }
 
   .header-contacts__tel--font {
@@ -92,10 +128,12 @@
     line-height: normal;
     font-size: 20px;
   }
-  .header-contacts__tel-icon{
+
+  .header-contacts__tel-icon {
     margin-right: 10px;
   }
-  .header-contacts__callback{
+
+  .header-contacts__callback {
     font-size: 10px;
     padding-left: 6px;
     padding-right: 6px;

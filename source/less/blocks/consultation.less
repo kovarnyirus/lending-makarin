@@ -90,6 +90,74 @@
   margin-bottom: 46px;
 }
 
+@media (min-width: 768px) and  (max-width: 1139px) {
+  .consultation__wrapper {
+    max-width: 768px;
+  }
+
+  .consultation__list {
+    display: flex;
+  }
+
+  .consultation__item {
+    padding-right: 84px;
+    border-bottom: none;
+    width: 50%;
+    margin-bottom: 26px;
+
+    &:nth-child(2n) {
+      padding-right: 0;
+      padding-left: 84px;
+      border-right: none;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        content: '';
+        display: block;
+        left: 0;
+        top: 36px;
+        bottom: 73px;
+        width: 1px;
+        background-color: @color-white;
+      }
+    }
+  }
+
+  .consultation__item-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .consultation__item-description {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 17px;
+  }
+
+  .consultation__item-cost {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 28px;
+  }
+
+  .consultation__btn {
+    padding-top: 19px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    width: 273px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .consultation__bg::after {
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+}
+
 
 @media (min-width: 1440px) {
   .consultation__wrapper {
@@ -110,12 +178,14 @@
     border-bottom: none;
     width: 50%;
     margin-bottom: 26px;
+
     &:nth-child(2n) {
       padding-right: 0;
       padding-left: 84px;
       border-right: none;
       position: relative;
-      &:before{
+
+      &:before {
         position: absolute;
         content: '';
         display: block;
@@ -152,7 +222,8 @@
     padding-bottom: 18px;
     font-size: 16px;
   }
-  .consultation__bg::after{
+
+  .consultation__bg::after {
     background-position-x: -0;
     background-position-y: -517px;
   }
