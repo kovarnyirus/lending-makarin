@@ -727,6 +727,9 @@ ul {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .main-nav--opened .header-contacts {
+    position: static;
+  }
   .header-contacts {
     position: absolute;
     right: 69px;
@@ -1440,7 +1443,6 @@ ul {
   background-image: url("../img/consultation-bg@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: -190px;
   width: 100%;
   height: 100%;
 }
@@ -1707,9 +1709,10 @@ ul {
     top: 248px;
   }
   .book__img {
-    width: 537px;
+    width: 600px;
     top: -100px;
     max-width: 837px;
+    margin-left: -55%;
   }
   .book__wrapper {
     margin-left: 0;
@@ -1884,6 +1887,22 @@ ul {
     margin-top: 13px;
   }
 }
+.assistant {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5d6da));
+  background: linear-gradient(#ffffff, #d5d6da);
+}
+.assistant:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/assistent-elipse.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+}
 .assistant__wrapper {
   max-width: 320px;
   margin-left: auto;
@@ -1892,7 +1911,6 @@ ul {
   padding-right: 22px;
   position: relative;
   padding-bottom: 91px;
-  background-image: url("../img/assistent-elipse.svg");
   background-repeat: no-repeat;
 }
 .assistant__img-block {
@@ -1928,7 +1946,6 @@ ul {
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .assistant {
-    max-width: 768px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
