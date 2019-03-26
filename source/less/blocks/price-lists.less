@@ -75,7 +75,50 @@
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
-  .price-lists {
+  .price-lists__wrapper {
+    max-width: 768px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .price-lists__items {
+    display: flex;
+  }
+
+  .price-lists__item {
+    width: 33.3%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .price-lists__item-description--font {
+    font-size: 15px;
+    line-height: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 24px;
+  }
+
+  .price-lists__item-description {
+    margin-bottom: 14px;
+  }
+
+  .price-lists__item-description--amount {
+    margin-bottom: 0;
+  }
+
+  .price-lists__item-name--margin {
+    margin-bottom: 6px;
+  }
+
+  .price-lists__title {
+    margin-bottom: 53px;
+  }
+
+  .price-lists__item-name {
+    line-height: 25px;
+  }
+  .price-lists{
     display: none;
   }
 }

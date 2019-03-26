@@ -298,7 +298,7 @@ ul {
   width: 17px;
   height: 15px;
 }
-@media (min-width: 768px) and (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .btn {
     padding: 29px;
     padding-bottom: 29px;
@@ -1117,13 +1117,14 @@ ul {
     height: 100%;
   }
   .about__author-img {
-    width: 276px;
+    width: 100%;
     padding-left: 0;
+    margin-right: -50%;
   }
   .about__book {
     display: block;
     position: absolute;
-    right: 120px;
+    right: 80px;
     top: 150px;
     width: 227px;
     height: 227px;
@@ -1166,6 +1167,18 @@ ul {
     text-align: center;
     color: #000000;
     opacity: 0.6;
+  }
+  .about__social {
+    top: 20px;
+  }
+  .about__social-link {
+    width: 37px;
+    height: 37px;
+  }
+  .about__video-btn {
+    left: 67%;
+    width: 108px;
+    height: 108px;
   }
 }
 @media (min-width: 1440px) {
@@ -2702,8 +2715,8 @@ ul {
     padding-bottom: 28px;
   }
   .program-toggle {
-    top: 69px;
-    right: 45px;
+    top: 35px;
+    right: 40px;
     width: 25px;
     height: 25px;
   }
@@ -2915,6 +2928,7 @@ ul {
   }
   .certificate__title {
     margin-top: 4px;
+    margin-bottom: 7px;
   }
   .certificate__gallery {
     margin-top: 0;
@@ -3203,6 +3217,43 @@ ul {
   margin-bottom: 36px;
 }
 @media (min-width: 768px) and (max-width: 1439px) {
+  .price-lists__wrapper {
+    max-width: 768px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .price-lists__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .price-lists__item {
+    width: 33.3%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .price-lists__item-description--font {
+    font-size: 15px;
+    line-height: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 24px;
+  }
+  .price-lists__item-description {
+    margin-bottom: 14px;
+  }
+  .price-lists__item-description--amount {
+    margin-bottom: 0;
+  }
+  .price-lists__item-name--margin {
+    margin-bottom: 6px;
+  }
+  .price-lists__title {
+    margin-bottom: 53px;
+  }
+  .price-lists__item-name {
+    line-height: 25px;
+  }
   .price-lists {
     display: none;
   }
