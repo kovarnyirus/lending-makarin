@@ -9,7 +9,10 @@ const popup = document.querySelector('.popup');
 const popupOverlay = document.querySelector('.popup-overlay');
 
 
+
+
 //аккордион блока програм
+
 for (let i = 0; i < programAccordions.length; i++) {
   programAccordions[i].addEventListener("click", function (event) {
     if (event.target.className === 'program-toggle') {
@@ -18,6 +21,8 @@ for (let i = 0; i < programAccordions.length; i++) {
 
   });
 }
+
+
 
 // аккардион блока ответов
 
@@ -29,6 +34,8 @@ for (let i = 0; i < answersAccordions.length; i++) {
     }
   });
 }
+
+
 
 // главное меню
 
@@ -46,16 +53,18 @@ function onMouseDownNavToggle() {
 
 mainNavToggle.addEventListener('mousedown', onMouseDownNavToggle);
 
+
+
 //popup
 
-function onMouseDownBtnForm(event){
-  if(event.target.className.indexOf('btn-form') !== -1){
+function onMouseDownBtnForm(event) {
+  if (event.target.className.indexOf('btn-form') !== -1) {
     popup.classList.remove("popup__closed");
     popup.classList.add("popup__opened");
     popupOverlay.classList.remove("popup-overlay--opened");
     popupOverlay.classList.add("popup-overlay--opened");
   }
-  if(event.target.className === 'popup__close-btn'){
+  if (event.target.className === 'popup__close-btn') {
     popup.classList.add("popup__closed");
     popup.classList.remove("popup__opened");
     popupOverlay.classList.add("popup-overlay--opened");
@@ -68,6 +77,9 @@ page.addEventListener('mousedown', onMouseDownBtnForm);
 
 //Mask for input
 $('[name="phone"]').mask('+7 (999) 999-99-99');
+
+
+
 
 $('.photo-gallery__list').slick({
   infinite: true,
@@ -125,6 +137,10 @@ $('.comment__list').slick({
 
 });
 
+
+
+// reedmore
+
 $('.comment__item-text').readmore({
   speed: 75,
   collapsedHeight: 95,
@@ -135,4 +151,21 @@ $('.comment__item-text').readmore({
     '          </a>',
   lessLink: '<a href="#" class="open-txt"><span>Свернуть</span></a>',
   collapsedClass: 'hide-text',
+});
+
+
+
+
+// плавный переход по якорям
+
+$(document).ready(function(){
+  $(".main-nav__list ").on("click","a", function (event) {
+    event.preventDefault();
+    //забираем идентификатор бока с атрибута href
+    var id  = $(this).attr('href'),
+      //узнаем высоту от начала страницы до блока на который ссылается якорь
+      top = $(id).offset().top;
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: top}, 1000);
+  });
 });
