@@ -2129,6 +2129,7 @@ ul {
   padding-left: 30px;
   padding-right: 25px;
   padding-bottom: 42px;
+  border-radius: 20px;
 }
 .comment__item:not(:first-child) {
   display: none;
@@ -2154,6 +2155,7 @@ ul {
   line-height: 19px;
   opacity: 0.6;
   font-size: 12px;
+  overflow: hidden;
 }
 .comment__item-all-text {
   font-size: 12px;
@@ -2391,7 +2393,7 @@ ul {
     max-width: 660px;
   }
   .answers {
-    background-image: url("../img/answers-bg.png");
+    background-image: url("../img/answers-bg.svg");
     position: relative;
     margin-bottom: 77px;
     background-size: cover;
@@ -2607,13 +2609,19 @@ ul {
   display: block;
   content: '';
   width: 2px;
-  height: 15px;
+  height: 100%;
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: #BABABA;
   line-height: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.program-toggle:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -2626,7 +2634,7 @@ ul {
 }
 .program__item.active .program-toggle:before {
   content: '';
-  width: 15px;
+  width: 100%;
   height: 2px;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -2636,6 +2644,12 @@ ul {
 }
 .program__item.active .program-toggle:after {
   opacity: 0;
+}
+.program__item.active .program-toggle:hover {
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .program__wrapper {
@@ -2687,6 +2701,12 @@ ul {
   .program__item.active {
     padding-bottom: 28px;
   }
+  .program-toggle {
+    top: 69px;
+    right: 45px;
+    width: 25px;
+    height: 25px;
+  }
 }
 @media (min-width: 1440px) {
   .program__wrapper {
@@ -2736,6 +2756,12 @@ ul {
   .program__item.active {
     padding-bottom: 28px;
   }
+  .program-toggle {
+    top: 65px;
+    right: 40px;
+    width: 25px;
+    height: 25px;
+  }
 }
 .patients-area__wrapper {
   padding-left: 22px;
@@ -2762,6 +2788,7 @@ ul {
   border-radius: 10px;
   height: 193px;
   background-image: url("../img/mobile-patients-area-map@x1.jpg");
+  background-size: cover;
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .patients-area__wrapper {
@@ -3321,6 +3348,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5px;
+  overflow: hidden;
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .map {
