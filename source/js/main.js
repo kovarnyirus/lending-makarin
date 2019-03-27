@@ -9,8 +9,6 @@ const popup = document.querySelector('.popup');
 const popupOverlay = document.querySelector('.popup-overlay');
 
 
-
-
 //аккордион блока програм
 
 for (let i = 0; i < programAccordions.length; i++) {
@@ -23,7 +21,6 @@ for (let i = 0; i < programAccordions.length; i++) {
 }
 
 
-
 // аккардион блока ответов
 
 for (let i = 0; i < answersAccordions.length; i++) {
@@ -34,7 +31,6 @@ for (let i = 0; i < answersAccordions.length; i++) {
     }
   });
 }
-
 
 
 // главное меню
@@ -54,7 +50,6 @@ function onMouseDownNavToggle() {
 mainNavToggle.addEventListener('mousedown', onMouseDownNavToggle);
 
 
-
 //popup
 
 function onMouseDownBtnForm(event) {
@@ -64,7 +59,7 @@ function onMouseDownBtnForm(event) {
     popupOverlay.classList.remove("popup-overlay--opened");
     popupOverlay.classList.add("popup-overlay--opened");
   }
-  if (event.target.className === 'popup__close-btn') {
+  if ((event.target.className === 'popup__close-btn') || (event.target.className === 'popup__go-back')){
     popup.classList.add("popup__closed");
     popup.classList.remove("popup__opened");
     popupOverlay.classList.add("popup-overlay--opened");
@@ -79,23 +74,39 @@ page.addEventListener('mousedown', onMouseDownBtnForm);
 $('[name="phone"]').mask('+7 (999) 999-99-99');
 
 
-
-
 $('.photo-gallery__list').slick({
-  infinite: true,
   slidesToShow: 4,
-  arrows: true,
+  slidesToScroll: 1,
   appendArrows: $('.photo-gallery__arrows'),
-  prevArrow: $('.arrow__left'),
-  nextArrow: $('.arrow__right'),
+  prevArrow: $('.photo-gallery-arrow-left'),
+  nextArrow: $('.photo-gallery-arrow-right'),
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1440,
       settings: {
-        slidesToShow: 1
+        slidesToShow: 4,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
       }
     }
   ]
+});
+
+$('.comment__list').slick({
+  dots: true,
+  infinite: true,
+  slidesToShow: 1,
+  leftMode: true,
+  variableWidth: true,
+  appendArrows: $('.comment__arrows'),
+  prevArrow: $('.comment__arrow-left'),
+  nextArrow: $('.comment__arrow-right'),
 
 });
 
@@ -115,7 +126,7 @@ $('.certificate__gallery').slick({
       }
     },
     {
-      breakpoint: 1140,
+      breakpoint: 1439,
       settings: {
         slidesToShow: 3
       }
@@ -123,20 +134,6 @@ $('.certificate__gallery').slick({
   ]
 
 });
-
-
-$('.comment__list').slick({
-  dots: true,
-  infinite: true,
-  slidesToShow: 1,
-  leftMode: true,
-  variableWidth: true,
-  appendArrows: $('.comment__arrows'),
-  prevArrow: $('.comment__arrow-left'),
-  nextArrow: $('.comment__arrow-right'),
-
-});
-
 
 
 // reedmore
@@ -154,18 +151,67 @@ $('.comment__item-text').readmore({
 });
 
 
-
-
 // плавный переход по якорям
 
-$(document).ready(function(){
-  $(".main-nav__list ").on("click","a", function (event) {
+$(document).ready(function () {
+  $(".main-nav__list ").on("click", "a", function (event) {
     event.preventDefault();
     //забираем идентификатор бока с атрибута href
-    var id  = $(this).attr('href'),
+    var id = $(this).attr('href'),
       //узнаем высоту от начала страницы до блока на который ссылается якорь
       top = $(id).offset().top;
     //анимируем переход на расстояние - top за 1500 мс
     $('body,html').animate({scrollTop: top}, 1000);
   });
 });
+
+
+//////////////отправка формы
+
+
+function formHandler(selector) {
+
+  // debugger;
+  $(selector).on('submit', function (e) {
+
+    e.preventDefault();
+
+    var _this = $(this),
+      $nameField = _this.find('input[name=name]'),
+      $emailField = _this.find('input[name=email]'),
+      $phoneField = _this.find('input[name=phone]');
+
+    console.log($nameField);
+    console.log($emailField);
+    console.log($phoneField);
+
+    if ($emailField.val() === '') {
+      $emailField.addClass('has-error');
+    }
+    if ($phoneField.val() === '') {
+      $phoneField.addClass('has-error');
+    }
+    else if ($emailField.val() !== '' && $phoneField.val() !== '') {
+
+      var ajaxdata = 'name=' + $nameField.val() + '&email=' + $emailField.val() + '&phone=' + $phoneField.val();
+
+      console.log(ajaxdata);
+
+      $.ajax({
+        type: "POST",
+        url: "form_handler.php",
+        data: ajaxdata,
+        success: function ($output) {
+          console.log('succes');
+          $('.popup__wrapper').html($output);
+        },
+        error: function (error) {
+          console.log(error);
+        }
+      });
+    }
+  });
+}
+
+
+formHandler('.callback-form');

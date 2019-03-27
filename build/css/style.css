@@ -1630,6 +1630,7 @@ ul {
   padding-right: 22px;
   padding-bottom: 44px;
   margin: auto;
+  z-index: 20;
 }
 .book__title {
   line-height: 40px;
@@ -1820,6 +1821,9 @@ ul {
 }
 .photo-gallery__item {
   margin-top: 11px;
+}
+.photo-gallery__list {
+  width: 100%;
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .photo-gallery {
@@ -3615,7 +3619,25 @@ ul {
   padding-right: 10px;
   margin-bottom: 39px;
   line-height: 35px;
-  font-size: 25px;
+  font-size: rem(25px);
+}
+.popup__succes-send {
+  margin-bottom: 51px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.popup__go-back {
+  color: #4AB6E8;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px dashed #4AB6E8;
+  cursor: pointer;
+}
+.popup__succes-send-icon {
+  fill: #4AB6E8;
+  margin-bottom: 2px;
+  margin-right: 5px;
 }
 @media (min-width: 960px) {
   .popup {
