@@ -99,7 +99,6 @@ $('.photo-gallery__list').slick({
 });
 
 $('.comment__list').slick({
-  dots: true,
   infinite: true,
   slidesToShow: 1,
   leftMode: true,
@@ -117,7 +116,6 @@ $('.certificate__gallery').slick({
   appendArrows: $('.certificate__arrows'),
   prevArrow: $('.certificate__arrow-left'),
   nextArrow: $('.certificate__arrow-right'),
-  centerPadding: '1px',
   responsive: [
     {
       breakpoint: 768,
@@ -126,7 +124,7 @@ $('.certificate__gallery').slick({
       }
     },
     {
-      breakpoint: 1439,
+      breakpoint: 1279,
       settings: {
         slidesToShow: 3
       }

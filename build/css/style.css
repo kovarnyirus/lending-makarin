@@ -481,6 +481,7 @@ body {
   font-weight: normal;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 button:active,
 button:focus {
@@ -2666,13 +2667,15 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-shadow: 0 20px 100px rgba(16, 94, 157, 0.15);
-          box-shadow: 0 20px 100px rgba(16, 94, 157, 0.15);
+  border: 1px solid rgba(16, 94, 157, 0.15);
   padding-top: 29px;
   padding-left: 30px;
   padding-right: 25px;
   padding-bottom: 42px;
   border-radius: 20px;
+  max-width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#F2F2F2));
+  background: linear-gradient(180deg, #F8F8F8 0%, #F2F2F2 100%);
 }
 .comment__item:not(:first-child) {
   display: none;
@@ -2731,7 +2734,6 @@ ul {
     padding-bottom: 46px;
     padding-right: 40px;
     position: relative;
-    background-color: #ffffff;
   }
   .comment__item:not(:first-child) {
     display: -webkit-box;
@@ -2823,7 +2825,6 @@ ul {
     padding-bottom: 46px;
     padding-right: 40px;
     position: relative;
-    background-color: #ffffff;
   }
   .comment__item:not(:first-child) {
     display: -webkit-box;
@@ -2852,16 +2853,11 @@ ul {
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    width: 1200px;
-    min-width: 1199px;
-    margin-top: -110px;
+    width: 1300px;
+    min-width: 1300px;
   }
   .comment__item {
     min-width: 600px;
-  }
-  .comment__item-wrapper {
-    padding-top: 110px;
-    margin-bottom: 110px;
   }
   .comment__item-user-avatar {
     position: absolute;
@@ -3066,6 +3062,8 @@ ul {
 .program__wrapper {
   padding-bottom: 56px;
   max-width: 500px;
+  padding-left: 21px;
+  padding-right: 21px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -3405,7 +3403,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3414,31 +3412,34 @@ ul {
   width: 70%;
 }
 .certificate__gallery {
-  margin-top: 97px;
+  margin-top: 20px;
   padding-top: 0;
   width: 100%;
 }
+.certificate__item-wrapper {
+  margin-top: 36px;
+  padding-top: 20px;
+}
 .certificate__item {
-  padding-bottom: 21px;
-  margin-top: 34px;
-  -webkit-box-shadow: 0 20px 100px rgba(16, 94, 157, 0.15);
-          box-shadow: 0 20px 100px rgba(16, 94, 157, 0.15);
   text-align: center;
   width: 217px;
-  margin: auto;
-  display: none;
-  margin-bottom: 10px;
-}
-.certificate__item:first-child {
-  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#F2F2F2));
+  background: linear-gradient(180deg, #F8F8F8 0%, #F2F2F2 100%);
+  border-radius: 20px;
+  padding-bottom: 25px;
 }
 .certificate__item-img {
-  margin-top: -41px;
-  width: 190px;
-  height: 230px;
+  width: 147px;
+  height: 194px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: -10px;
 }
 .certificate__item-description {
   font-size: 12px;
@@ -3446,7 +3447,7 @@ ul {
   opacity: 0.6;
   padding-left: 45px;
   padding-right: 45px;
-  margin-top: -9px;
+  margin-top: 10px;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .certificate__wrapper {
@@ -3454,7 +3455,7 @@ ul {
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 60px;
-    padding-bottom: 0;
+    padding-bottom: 94px;
   }
   .certificate__title {
     margin-top: 4px;
@@ -3479,15 +3480,8 @@ ul {
   .certificate__item-wrapper {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 110px;
-    padding-bottom: 110px;
-  }
-  .certificate__item-wrapper.slick-active {
-    opacity: 1;
-    visibility: visible;
   }
   .certificate__item-description {
-    margin-bottom: 5px;
     line-height: 26px;
     font-size: 15px;
     padding-left: 10px;
@@ -3503,7 +3497,7 @@ ul {
     padding-left: 0;
     padding-right: 0;
     padding-top: 60px;
-    padding-bottom: 0;
+    padding-bottom: 100px;
   }
   .certificate__title {
     margin-top: 4px;
@@ -3531,18 +3525,11 @@ ul {
   .certificate__item-wrapper {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 110px;
-    padding-bottom: 110px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    opacity: 0;
-  }
-  .certificate__item-wrapper.slick-active {
-    opacity: 1;
-    visibility: visible;
+    margin-top: 39px;
   }
   .certificate__item-description {
-    margin-bottom: 5px;
     line-height: 26px;
     font-size: 15px;
     padding-left: 10px;

@@ -13,17 +13,20 @@
 
 .comment__list {
   margin-top: 16px;
+  //max-width: 100%;
 }
 
 .comment__item {
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 0 20px 100px rgba(16, 94, 157, 0.15);
+  border: 1px solid rgba(16, 94, 157, 0.15);
   padding-top: 29px;
   padding-left: 30px;
   padding-right: 25px;
   padding-bottom: 42px;
   border-radius: 20px;
+  max-width: 100%;
+  background: linear-gradient(180deg, #F8F8F8 0%, #F2F2F2 100%);
 
   &:not(:first-child) {
     display: none;
@@ -91,7 +94,6 @@
     padding-bottom: 46px;
     padding-right: 40px;
     position: relative;
-    background-color: @color-white;
 
     &:not(:first-child) {
       display: flex;
@@ -191,7 +193,6 @@
     padding-bottom: 46px;
     padding-right: 40px;
     position: relative;
-    background-color: @color-white;
 
     &:not(:first-child) {
       display: flex;
@@ -220,17 +221,12 @@
     margin-top: 0;
     display: flex;
     position: relative;
-    width: 1200px;
-    min-width: 1199px;
-    margin-top: -110px;
+    width: 1300px;
+    min-width: 1300px;
   }
 
   .comment__item {
    min-width: 600px;
-  }
-  .comment__item-wrapper{
-    padding-top: 110px;
-    margin-bottom: 110px;
   }
 
   .comment__item-user-avatar {
@@ -269,23 +265,4 @@
     margin-left: 10px;
     transform: rotate(90deg);
   }
-  //
-  //
-  //
-  //.comment__list{
-  //  & .slick-list{
-  //    overflow: visible;
-  //  }
-  //  & .slick-slide{
-  //    opacity: 0;
-  //  }
-  //  & .slick-active{
-  //    opacity: 1;
-  //  }
-  //
-  //}
-  //
-  //.comment{
-  //  overflow: visible;
-  //}
 }
