@@ -215,3 +215,17 @@ function formHandler(selector) {
 
 
 formHandler('.callback-form');
+
+function getPageScroll() {
+  return window.pageYOffset;
+}
+
+$(window).on('scroll', function (e) {
+  var $header = $(".header__fixed-wrap");
+  if (getPageScroll() > 120) {
+    $header.addClass("fixed").fadeIn();
+
+  } else {
+    $header.removeClass("fixed");
+  }
+})

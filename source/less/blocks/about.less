@@ -27,7 +27,7 @@
   padding-left: 22px;
   padding-right: 22px;
   margin: auto;
-  max-width: 320px;
+  max-width: 500px;
   position: relative;
   z-index: 5;
   padding-top: 2px;
@@ -51,6 +51,7 @@
   line-height: 23px;
   font-size: 16px;
   text-align: center;
+  opacity: 0.6;
 }
 
 .about__video-wrapper {
@@ -76,8 +77,9 @@
 
 .about__social {
   position: absolute;
-  right: 21px;
+  right: 50%;
   top: 160px;
+  transform: translateX(115px);
   display: flex;
   flex-direction: column;
 }
@@ -100,6 +102,12 @@
   &:active {
     background-color: #ECECEC;
   }
+}
+
+.about__btn{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 
@@ -203,6 +211,8 @@
 
   .about__social {
     top: 20px;
+    right: 21px;
+    transform: none;
   }
 
   .about__social-link {
@@ -214,6 +224,9 @@
     left: 67%;
     width: 108px;
     height: 108px;
+  }
+  .about__btn{
+    margin-left: 0;
   }
 }
 
@@ -265,6 +278,8 @@
     min-width: 348px;
     padding-top: 31px;
     padding-bottom: 27px;
+    margin-left: 0;
+
   }
 
   .about__achievement {
@@ -400,6 +415,7 @@
     right: auto;
     left: -160px;
     top: 115px;
+    transform: none;
   }
 
   .about__social-link {

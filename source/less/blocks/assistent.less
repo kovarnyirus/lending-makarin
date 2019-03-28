@@ -1,6 +1,7 @@
 .assistant {
   position: relative;
   background: linear-gradient(rgba(255, 255, 255, 1), rgba(213, 214, 218, 1));
+
   &:before {
     position: absolute;
     display: block;
@@ -15,7 +16,7 @@
 }
 
 .assistant__wrapper {
-  max-width: 320px;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 22px;
@@ -54,8 +55,9 @@
 
 .assistant__img {
   position: relative;
-  left: -10px;
   top: 11px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .assistant__video-btn {
@@ -115,6 +117,7 @@
     top: auto;
     left: -96px;
     bottom: 0;
+    transform: none;
   }
 
   .assistant__watch-video-btn {
@@ -206,7 +209,7 @@
     width: 578px;
     max-width: 578px;
     top: 5px;
-    left: -96px;
+    left: 40%;
 
   }
 

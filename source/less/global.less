@@ -51,13 +51,13 @@ div {
   transition: .2s;
 
   &:hover {
-    background: linear-gradient(126.59deg, #FFE68D 20.13%, #FFC818 90.1%);
-    box-shadow: none;
+    background: linear-gradient(to right, rgba(255, 230, 141, 0.98) 20.13%, #FFC818 90.1%);
+    box-shadow: 0px 11px 30px rgba(255, 208, 58, 0.5);
   }
 
   &:active {
     background: linear-gradient(126.59deg, #F5D871 20.13%, #EFBD1B 90.1%);
-    box-shadow: none;
+    box-shadow: 0px 11px 30px rgba(255, 208, 58, 0.5);
   }
 }
 
@@ -67,9 +67,11 @@ a {
 }
 
 .link {
+  transition: .3s;
   &:hover {
     color: #76D4FF;
     border-bottom: 1px dashed #76D4FF;
+
   }
 
   &:active {
@@ -162,7 +164,7 @@ ul {
 .arrow__left {
   &:hover {
     margin-left: -9px;
-    margin-bottom: -5px;
+    margin-bottom: -10px;
   }
 
   &:active {
@@ -174,7 +176,7 @@ ul {
 .arrow__right {
   &:hover {
     margin-right: -9px;
-    margin-bottom: -5px;
+    margin-bottom: -10px;
   }
 
   &:active {
@@ -201,6 +203,7 @@ ul {
   padding-left: 0;
   padding-right: 0;
   z-index: 2;
+  transition: .3s;
 
   &:before {
     position: absolute;
@@ -236,7 +239,6 @@ ul {
   &:active {
     padding: 7px;
     box-sizing: initial;
-
   }
 }
 

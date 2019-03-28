@@ -49,27 +49,42 @@
 </symbol></svg>
 </div>
 <header class="header">
-  <div class="header__wrapper">
-    <a href="#" class="header__logo">
-      <picture>
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/desktop-header-logo@1x.webp 1x, img/desktop-header-logo@2x.webp 2x">
-        <source type="image/webp" srcset="img/mobile-header-logo@1x.webp 1x, img/mobile-header-logo@2x.webp 2x">
-        <source media="(min-width: 768px)" srcset="img/desktop-header-logo@1x.png 1x, im g/desktop-header-logo@2x.png 2x">
-        <img class="header__logo-img" src="img/mobile-header-logo@1x.png" srcset="img/mobile-header-logo@2x.png 2x" alt="лого" width="131" height="34">
-      </picture>
-    </a>
-    <nav class="header__nav main-nav main-nav--closed">
-      <button class="main-nav__toggle">Открыть меню</button>
-      <ul class="main-nav__list ">
-        <li class="main-nav__item"><a href="#book" class="main-nav__link">Книга</a></li>
-        <li class="main-nav__item"><a href="#photo-gallery" class="main-nav__link">Фотогалерея</a></li>
-        <li class="main-nav__item"><a href="#comment" class="main-nav__link">Отзывы</a></li>
-        <li class="main-nav__item"><a href="#answers" class="main-nav__link">Вопросы</a></li>
-        <li class="main-nav__item"><a href="#certificate" class="main-nav__link">Лицензии</a></li>
-        <li class="main-nav__item"><a href="#price-lists" class="main-nav__link">Цены</a></li>
-        <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
-      </ul>
-      <div class="header-contacts">
+  <div class="header__fixed-wrap">
+    <div class="header__wrapper">
+      <a href="#" class="header__logo">
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/desktop-header-logo@1x.webp 1x, img/desktop-header-logo@2x.webp 2x">
+          <source type="image/webp" srcset="img/mobile-header-logo@1x.webp 1x, img/mobile-header-logo@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/desktop-header-logo@1x.png 1x, im g/desktop-header-logo@2x.png 2x">
+          <img class="header__logo-img" src="img/mobile-header-logo@1x.png" srcset="img/mobile-header-logo@2x.png 2x" alt="лого" width="131" height="34">
+        </picture>
+      </a>
+      <nav class="header__nav main-nav main-nav--closed">
+        <button class="main-nav__toggle">Открыть меню</button>
+        <ul class="main-nav__list ">
+          <li class="main-nav__item"><a href="#book" class="main-nav__link">Книга</a></li>
+          <li class="main-nav__item"><a href="#photo-gallery" class="main-nav__link">Фотогалерея</a></li>
+          <li class="main-nav__item"><a href="#comment" class="main-nav__link">Отзывы</a></li>
+          <li class="main-nav__item"><a href="#answers" class="main-nav__link">Вопросы</a></li>
+          <li class="main-nav__item"><a href="#certificate" class="main-nav__link">Лицензии</a></li>
+          <li class="main-nav__item"><a href="#price-lists" class="main-nav__link">Цены</a></li>
+          <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
+        </ul>
+        <div class="header-contacts">
+          <div class="header-contacts__item">
+            <a href="tel:+78124083234" class="header-contacts__tel">
+              <svg width="15px" height="15px" class="header-contacts__tel-icon">
+                <use xlink:href="#icon-call"></use>
+              </svg>
+              +7(812) <span class="header-contacts__tel--font">408-32-34</span>
+            </a>
+          </div>
+          <div class="header-contacts__item"><a href="#" class="link header-contacts__callback btn-form">Заказать обратный
+            звонок</a>
+          </div>
+        </div>
+      </nav>
+      <div class="header-contacts header-contacts--visible">
         <div class="header-contacts__item">
           <a href="tel:+78124083234" class="header-contacts__tel">
             <svg width="15px" height="15px" class="header-contacts__tel-icon">
@@ -82,12 +97,12 @@
           звонок</a>
         </div>
       </div>
-    </nav>
-    <a href="tel:+78124083234" class="header__tel-ico">
-      <svg width="15px" height="15px">
-        <use xlink:href="#icon-call"></use>
-      </svg>
-    </a>
+      <a href="tel:+78124083234" class="header__tel-ico">
+        <svg width="15px" height="15px">
+          <use xlink:href="#icon-call"></use>
+        </svg>
+      </a>
+    </div>
   </div>
 </header>
 <section class="about">
