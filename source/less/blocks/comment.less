@@ -65,10 +65,18 @@
   line-height: 19px;
   border-bottom: 1px dashed #4AB6E8;
   padding-bottom: 4px;
+
+  &:hover{
+    .comment__item-all-text-ico {
+      fill: #76d4ff;
+      transition: .3s;
+    }
+  }
 }
 
 .comment__item-all-text-ico {
   display: none;
+  fill: #4ab6e8;
 }
 
 .comment__arrows{
@@ -264,5 +272,6 @@
     display: inline-block;
     margin-left: 10px;
     transform: rotate(90deg);
+
   }
 }

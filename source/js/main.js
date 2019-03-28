@@ -240,3 +240,4 @@ $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
 
   fixedContentPos: false
 });
+

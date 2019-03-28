@@ -2717,8 +2717,14 @@ ul {
   border-bottom: 1px dashed #4AB6E8;
   padding-bottom: 4px;
 }
+.comment__item-all-text:hover .comment__item-all-text-ico {
+  fill: #76d4ff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .comment__item-all-text-ico {
   display: none;
+  fill: #4ab6e8;
 }
 .comment__arrows {
   z-index: 10;
