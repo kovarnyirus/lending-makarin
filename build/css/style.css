@@ -1152,7 +1152,8 @@ ul {
   width: 100%;
   max-height: 65px;
   z-index: 50;
-  background-color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#F2F2F2));
+  background: linear-gradient(180deg, #F8F8F8 0%, #F2F2F2 100%);
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
@@ -1182,7 +1183,6 @@ ul {
     width: 100%;
     max-height: 85px;
     z-index: 50;
-    background-color: #ffffff;
     -webkit-transition: 0.1s;
     transition: 0.1s;
   }
@@ -1300,8 +1300,6 @@ ul {
     width: 100%;
     max-height: 85px;
     z-index: 50;
-    background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#F2F2F2));
-    background: linear-gradient(180deg, #F8F8F8 0%, #F2F2F2 100%);
     -webkit-transition: 0.1s;
     transition: 0.1s;
   }
@@ -2667,6 +2665,7 @@ ul {
 }
 .comment__list {
   margin-top: 16px;
+  width: 100%;
 }
 .comment__item {
   display: -webkit-box;
@@ -2682,10 +2681,10 @@ ul {
   border-radius: 20px;
   background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#F2F2F2));
   background: linear-gradient(180deg, #F8F8F8 0%, #F2F2F2 100%);
-  max-width: 278px;
-}
-.comment__item:not(:first-child) {
-  display: none;
+  width: 278px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
 }
 .comment__item-user-avatar {
   width: 66px;
@@ -2747,11 +2746,6 @@ ul {
     padding-bottom: 46px;
     padding-right: 40px;
     position: relative;
-  }
-  .comment__item:not(:first-child) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   .comment__item:before {
     position: absolute;
@@ -3594,11 +3588,17 @@ ul {
 .documentation-list__item-link:hover {
   border-bottom: none;
 }
+.documentation-list__item-link:hover + .documentation-list__icon {
+  fill: #76d4ff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .documentation-list__item-link:active {
   border-bottom: none;
 }
 .documentation-list__icon {
   padding-right: 18px;
+  fill: #4AB6E8;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .documentation__wrapper {
@@ -3847,7 +3847,7 @@ ul {
 }
 .contacts__phone,
 .contacts__mail {
-  color: #000000;
+  color: #20252C;
   opacity: 0.6;
   line-height: 29px;
   font-size: 20px;

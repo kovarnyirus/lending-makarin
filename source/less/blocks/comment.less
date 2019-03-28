@@ -13,7 +13,7 @@
 
 .comment__list {
   margin-top: 16px;
-  //max-width: 100%;
+  width: 100%
 }
 
 .comment__item {
@@ -26,11 +26,10 @@
   padding-bottom: 42px;
   border-radius: 20px;
   background: linear-gradient(180deg, #F8F8F8 0%, #F2F2F2 100%);
-  max-width: 278px;
-
-  &:not(:first-child) {
-    display: none;
-  }
+  width: 278px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
 }
 
 .comment__item-user-avatar {
@@ -103,9 +102,6 @@
     padding-right: 40px;
     position: relative;
 
-    &:not(:first-child) {
-      display: flex;
-    }
 
     &:before {
       position: absolute;
