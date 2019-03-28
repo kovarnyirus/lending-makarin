@@ -23,7 +23,8 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
-    "source/*.php"
+    "source/*.php",
+    "source/css/*.css"
     ], {
       base: "source"
     })

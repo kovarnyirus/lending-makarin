@@ -53,18 +53,20 @@ mainNavToggle.addEventListener('mousedown', onMouseDownNavToggle);
 //popup
 
 function onMouseDownBtnForm(event) {
-  if (event.target.className.indexOf('btn-form') !== -1) {
-    popup.classList.remove("popup__closed");
-    popup.classList.add("popup__opened");
-    popupOverlay.classList.remove("popup-overlay--opened");
-    popupOverlay.classList.add("popup-overlay--opened");
+  if(typeof(event.target.className) === "string"){
+    if (event.target.className.indexOf('btn-form') !== -1) {
+      popup.classList.remove("popup__closed");
+      popup.classList.add("popup__opened");
+      popupOverlay.classList.remove("popup-overlay--opened");
+      popupOverlay.classList.add("popup-overlay--opened");
+    } else if((event.target.className === 'popup__close-btn') || (event.target.className === 'popup__go-back')){
+      popup.classList.add("popup__closed");
+      popup.classList.remove("popup__opened");
+      popupOverlay.classList.add("popup-overlay--opened");
+      popupOverlay.classList.remove("popup-overlay--opened");
+    }
   }
-  if ((event.target.className === 'popup__close-btn') || (event.target.className === 'popup__go-back')){
-    popup.classList.add("popup__closed");
-    popup.classList.remove("popup__opened");
-    popupOverlay.classList.add("popup-overlay--opened");
-    popupOverlay.classList.remove("popup-overlay--opened");
-  }
+
 }
 
 page.addEventListener('mousedown', onMouseDownBtnForm);
@@ -74,7 +76,37 @@ page.addEventListener('mousedown', onMouseDownBtnForm);
 $('[name="phone"]').mask('+7 (999) 999-99-99');
 
 
+
+////////////reedmore
+
+$('.comment__item-text').readmore({
+  speed: 75,
+  collapsedHeight: 95,
+  moreLink: '<a href="" class="link comment__item-all-text">Весь отзыв\n' +
+    '            <svg width="7px" height="10px" class="comment__item-all-text-ico">\n' +
+    '              <use xlink:href="#icon-arrow-right"></use>\n' +
+    '            </svg>\n' +
+    '          </a>',
+  lessLink: '<a href="#" class="open-txt"><span>Свернуть</span></a>',
+  collapsedClass: 'hide-text',
+});
+
+
+$('.comment__list').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  leftMode: true,
+  variableWidth: true,
+  arrows: true,
+  appendArrows: $('.comment__arrows'),
+  prevArrow: $('.comment__arrow-left'),
+  nextArrow: $('.comment__arrow-right'),
+});
+
+
 $('.photo-gallery__list').slick({
+  infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
   appendArrows: $('.photo-gallery__arrows'),
@@ -96,17 +128,6 @@ $('.photo-gallery__list').slick({
       }
     }
   ]
-});
-
-$('.comment__list').slick({
-  infinite: true,
-  slidesToShow: 1,
-  leftMode: true,
-  variableWidth: true,
-  appendArrows: $('.comment__arrows'),
-  prevArrow: $('.comment__arrow-left'),
-  nextArrow: $('.comment__arrow-right'),
-
 });
 
 $('.certificate__gallery').slick({
@@ -134,19 +155,7 @@ $('.certificate__gallery').slick({
 });
 
 
-// reedmore
 
-$('.comment__item-text').readmore({
-  speed: 75,
-  collapsedHeight: 95,
-  moreLink: '<a href="" class="link comment__item-all-text">Весь отзыв\n' +
-    '            <svg width="7px" height="10px" class="comment__item-all-text-ico">\n' +
-    '              <use xlink:href="#icon-arrow-right"></use>\n' +
-    '            </svg>\n' +
-    '          </a>',
-  lessLink: '<a href="#" class="open-txt"><span>Свернуть</span></a>',
-  collapsedClass: 'hide-text',
-});
 
 
 // плавный переход по якорям
@@ -179,9 +188,6 @@ function formHandler(selector) {
       $emailField = _this.find('input[name=email]'),
       $phoneField = _this.find('input[name=phone]');
 
-    console.log($nameField);
-    console.log($emailField);
-    console.log($phoneField);
 
     if ($emailField.val() === '') {
       $emailField.addClass('has-error');
@@ -193,14 +199,11 @@ function formHandler(selector) {
 
       var ajaxdata = 'name=' + $nameField.val() + '&email=' + $emailField.val() + '&phone=' + $phoneField.val();
 
-      console.log(ajaxdata);
-
       $.ajax({
         type: "POST",
         url: "form_handler.php",
         data: ajaxdata,
         success: function ($output) {
-          console.log('succes');
           $('.popup__wrapper').html($output);
         },
         error: function (error) {
@@ -226,4 +229,14 @@ $(window).on('scroll', function (e) {
   } else {
     $header.removeClass("fixed");
   }
-})
+});
+
+$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+
+  type: 'iframe',
+  mainClass: 'mfp-fade',
+  removalDelay: 160,
+  preloader: false,
+
+  fixedContentPos: false
+});

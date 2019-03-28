@@ -522,6 +522,9 @@ div {
   max-width: 276px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .btn:hover {
   background: -webkit-gradient(linear, left top, right top, color-stop(20.13%, rgba(255, 230, 141, 0.98)), color-stop(90.1%, #FFC818));
@@ -656,6 +659,7 @@ ul {
   top: 62%;
   left: 48%;
   background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.4);
   border-radius: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -682,6 +686,7 @@ ul {
   position: absolute;
   display: block;
   content: "Смотреть видео";
+  text-align: center;
   width: 65px;
   height: 36px;
   font-size: 12px;
@@ -1295,7 +1300,8 @@ ul {
     width: 100%;
     max-height: 85px;
     z-index: 50;
-    background-color: #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#F2F2F2));
+    background: linear-gradient(180deg, #F8F8F8 0%, #F2F2F2 100%);
     -webkit-transition: 0.1s;
     transition: 0.1s;
   }
@@ -2454,6 +2460,7 @@ ul {
           transform: translateX(-50%);
 }
 .assistant__video-btn {
+  color: ;
   top: 62%;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -2673,9 +2680,9 @@ ul {
   padding-right: 25px;
   padding-bottom: 42px;
   border-radius: 20px;
-  max-width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#F2F2F2));
   background: linear-gradient(180deg, #F8F8F8 0%, #F2F2F2 100%);
+  max-width: 278px;
 }
 .comment__item:not(:first-child) {
   display: none;
