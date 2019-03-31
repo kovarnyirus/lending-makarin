@@ -627,6 +627,10 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.arrow svg {
+  width: 4px;
+  height: 7px;
+}
 .arrow:hover {
   padding: 8px;
   -webkit-box-sizing: initial;
