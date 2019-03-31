@@ -1484,6 +1484,7 @@ ul {
   background: -webkit-gradient(linear, left top, left bottom, from(#F7F7F7), to(#D5D6DA));
   background: linear-gradient(to bottom, #F7F7F7, #D5D6DA);
   position: relative;
+  overflow-x: hidden;
 }
 .about__book {
   display: none;
@@ -2646,6 +2647,9 @@ ul {
     line-height: 26px;
     margin-bottom: 60px;
   }
+}
+.comment {
+  overflow-x: hidden;
 }
 .comment__wrapper {
   display: -webkit-box;

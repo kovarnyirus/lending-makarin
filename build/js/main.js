@@ -102,6 +102,22 @@ $('.comment__list').slick({
   appendArrows: $('.comment__arrows'),
   prevArrow: $('.comment__arrow-left'),
   nextArrow: $('.comment__arrow-right'),
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 
@@ -114,7 +130,7 @@ $('.photo-gallery__list').slick({
   nextArrow: $('.photo-gallery-arrow-right'),
   responsive: [
     {
-      breakpoint: 1440,
+      breakpoint: 1280,
       settings: {
         slidesToShow: 4,
         slidesToScroll: 1
