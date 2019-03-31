@@ -483,6 +483,10 @@ body {
           box-sizing: border-box;
   overflow-x: hidden;
 }
+input,
+textarea {
+  outline: none;
+}
 button:active,
 button:focus {
   outline: none;
@@ -4141,7 +4145,7 @@ ul {
   padding-right: 10px;
   margin-bottom: 39px;
   line-height: 35px;
-  font-size: rem(25px);
+  font-size: 25px;
 }
 .popup__succes-send {
   margin-bottom: 51px;
@@ -4226,12 +4230,14 @@ ul {
   font-family: "Montserrat", "Arial", sans-serif;
   line-height: 22px;
   font-size: 15px;
-  color: #000000;
-  opacity: 0.4;
+  color: rgba(0, 0, 0, 0.71);
   padding-left: 37px;
   padding-top: 28px;
   padding-bottom: 27px;
   border: none;
+}
+.callback-form__input:focus {
+  color: #000000;
 }
 .callback-form__input:last-child {
   margin-bottom: 30px;
