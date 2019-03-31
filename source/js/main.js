@@ -55,13 +55,13 @@ mainNavToggle.addEventListener('mousedown', onMouseDownNavToggle);
 function onMouseDownBtnForm(event) {
   if(typeof(event.target.className) === "string"){
     if (event.target.className.indexOf('btn-form') !== -1) {
-      popup.classList.remove("popup__closed");
-      popup.classList.add("popup__opened");
+      popup.classList.remove("popup--closed");
+      popup.classList.add("popup--opened");
       popupOverlay.classList.remove("popup-overlay--opened");
       popupOverlay.classList.add("popup-overlay--opened");
     } else if((event.target.className === 'popup__close-btn') || (event.target.className === 'popup__go-back')){
-      popup.classList.add("popup__closed");
-      popup.classList.remove("popup__opened");
+      popup.classList.add("popup--closed");
+      popup.classList.remove("popup--opened");
       popupOverlay.classList.add("popup-overlay--opened");
       popupOverlay.classList.remove("popup-overlay--opened");
     }
