@@ -1492,7 +1492,6 @@ ul {
   background: -webkit-gradient(linear, left top, left bottom, from(#F7F7F7), to(#D5D6DA));
   background: linear-gradient(to bottom, #F7F7F7, #D5D6DA);
   position: relative;
-  overflow-x: hidden;
 }
 .about__book {
   display: none;
@@ -3847,7 +3846,7 @@ ul {
   margin-bottom: 65px;
 }
 .contacts__address {
-  font-size: 26px;
+  font-size: 20px;
   line-height: 37px;
   font-family: "Cambria", "Arial", sans-serif;
   margin-bottom: 30px;
